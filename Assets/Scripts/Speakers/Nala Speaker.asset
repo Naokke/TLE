@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9432e842b58cc3f42aaaef015233b38f, type: 3}
+  m_Name: Nala Speaker
+  m_EditorClassIdentifier: Assembly-CSharp::Speakers
+  speakerName: Nala
+  boxNameColor: {r: 0.47058827, g: 0.21960786, b: 0.20000002, a: 1}
+  speakerSprite: {fileID: -6502029920788193263, guid: f0a9e1c81618beb49bdd746923b1ddb1, type: 3}
