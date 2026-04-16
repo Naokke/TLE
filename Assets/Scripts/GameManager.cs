@@ -21,8 +21,10 @@ public class GameManager : MonoBehaviour
     #region Variables and Objects
 
     [SerializeField] private DialogueController DialoguePopUp;
-    [SerializeField] private GameObject InteractableScreen;
     [SerializeField] private Dialogue defaultD;
+
+    [SerializeField] private Canvas InteractableScreen;
+    [SerializeField] private Canvas PasswordMinigameCanva;
 
     #endregion
 
@@ -38,14 +40,15 @@ public class GameManager : MonoBehaviour
     {
         if (Activate)
         {
-            // To SetActive() DialoguePopUp "window" and makes dialogue appear
-            DialoguePopUp.gameObject.SetActive(true);
+            // To SetActive() DialoguePopUp "window" and makes dialogue appear            
             DialoguePopUp.PlayDialogue(clickedDialogue);
-            InteractableScreen.SetActive(false);
+            InteractableScreen.gameObject.SetActive(false);
+            DialoguePopUp.gameObject.SetActive(true);
+
         } else if (!Activate)
         {
             DialoguePopUp.gameObject.SetActive(false);
-            InteractableScreen.SetActive(true);
+            InteractableScreen.gameObject.SetActive(true);
         }
     }
 
