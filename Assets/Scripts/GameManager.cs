@@ -4,32 +4,51 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
+    
+    #region Singleton
     private static GameManager instance;
-    public DialogueController DialoguePopUp;
 
     public static GameManager Get()
     {
         if (instance == null)
         {
-            instance = new GameManager();
+            instance = FindFirstObjectByType<GameManager>();
         }
         return instance;
     }
+    #endregion
+
+    #region Variables and Objects
+
+    [SerializeField] private DialogueController DialoguePopUp;
+    [SerializeField] private GameObject InteractableScreen;
+    [SerializeField] private Dialogue defaultD;
+
+    #endregion
 
     private void Update()
     {
-        if (Input.GetKeyUp(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F)) // TO DEBUG THINGS (TEMPORAL)
         {
-            ActiveDialogue();           
+            DialoguePopUp.PlayDialogue(defaultD); //Debugging DialoguePopUp
         }
     }
 
-    public void ActiveDialogue() // To Set Active DialoguePopUp "window"
+    public void ActiveDialogue(Dialogue clickedDialogue, bool Activate) 
     {
-        DialoguePopUp.gameObject.SetActive(true);
-        DialoguePopUp.PlayDialogue();
+        if (Activate)
+        {
+            // To SetActive() DialoguePopUp "window" and makes dialogue appear
+            DialoguePopUp.gameObject.SetActive(true);
+            DialoguePopUp.PlayDialogue(clickedDialogue);
+            InteractableScreen.SetActive(false);
+        } else if (!Activate)
+        {
+            DialoguePopUp.gameObject.SetActive(false);
+            InteractableScreen.SetActive(true);
+        }
     }
 
-    
+
 
 }

@@ -21,14 +21,15 @@ public class DialogueController : MonoBehaviour
     public Image dialogueSpeakerRight;
     
     //color info boxes
-    public RawImage boxNameLeft;
-    public RawImage boxNameRight;
+    public Image boxNameLeft;
+    public Image boxNameRight;
 
     //SentenceIndex -1 to avoid errors and start dialogues at click
     private int sentenceIndex = -1;
 
     //Current Dialogue
     public Dialogue currentDialogue;
+    [SerializeField] private Dialogue defaultDialogue;
 
     //initial state finished to avoid errors
     private State state = State.finished;
@@ -49,7 +50,7 @@ public class DialogueController : MonoBehaviour
 
     private void Start()
     {
-        // ACTIVATION IN: GameManager Script
+        // ACTIVATION IN: GameManager Script too
         this.gameObject.SetActive(false); //Set GameObject Invisible, to use just when needed. 
     }
 
@@ -64,9 +65,11 @@ public class DialogueController : MonoBehaviour
 
     #region Dialogue Functions
 
-    //Function to start dialogue (IT NEEDS SOME WORK TO CHANGE THE DIALOGUE WHEN YOU CLICK)
-    public void PlayDialogue()
-    {       
+    //Function to start dialogue
+    public void PlayDialogue(Dialogue clickedDialogue)
+    {
+        this.gameObject.SetActive(true);
+        currentDialogue = clickedDialogue;
         sentenceIndex = -1;
         PlaySentence();
     }
@@ -162,7 +165,7 @@ public class DialogueController : MonoBehaviour
         //When the dialogue is finished (all the sentences) close de PopUp Dialogue Window
         if (state == State.finished && sentenceIndex == currentDialogue.Sentences.Count)
         {
-            this.gameObject.SetActive(false);
+            GameManager.Get().ActiveDialogue(defaultDialogue, false);
         }
     }
     #endregion

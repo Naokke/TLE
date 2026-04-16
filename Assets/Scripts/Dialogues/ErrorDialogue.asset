@@ -10,15 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f026d171676a70047a2488952fccb7ca, type: 3}
-  m_Name: Example1
+  m_Name: ErrorDialogue
   m_EditorClassIdentifier: Assembly-CSharp::Dialogue
   Sentences:
-  - text: Este es el dialogo 1 de ejemplo
+  - text: Hola, si estas viendo este Dialogo, es porque no se cargo correctamente
+    speaker: {fileID: 11400000, guid: 1b30856fb5261da4ebe2db9667be69c7, type: 2}
+    isLeft: 0
+  - text: Hola, si estas viendo este Dialogo, es porque no se cargo correctamente
     speaker: {fileID: 11400000, guid: 1b30856fb5261da4ebe2db9667be69c7, type: 2}
     isLeft: 1
-  - text: Hamburgesa
+  - text: Hola, si estas viendo este Dialogo, es porque no se cargo correctamente
     speaker: {fileID: 11400000, guid: a5905a3c3bb578b48b38b0392aca289a, type: 2}
     isLeft: 0
-  - text: Salchipapa >
-    speaker: {fileID: 11400000, guid: 1b30856fb5261da4ebe2db9667be69c7, type: 2}
+  - text: Hola, si estas viendo este Dialogo, es porque no se cargo correctamente
+    speaker: {fileID: 11400000, guid: a5905a3c3bb578b48b38b0392aca289a, type: 2}
     isLeft: 1
