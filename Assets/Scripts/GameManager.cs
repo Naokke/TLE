@@ -69,8 +69,12 @@ public class GameManager : MonoBehaviour
 
     public void PasswordCheker(bool passwordSucceed)
     {
-        IsPasswordSuccess = passwordSucceed;
-        Debug.Log("ContraseñaCorrecta");
+        if (passwordSucceed == true)
+        {
+            IsPasswordSuccess = passwordSucceed;
+            Debug.Log("ContraseñaCorrecta");
+            ActivePasswordMinigame(false);
+        }
     }
 
     #endregion
