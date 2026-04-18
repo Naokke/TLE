@@ -12,23 +12,24 @@ public class DialogueController : MonoBehaviour
     #region Starting variables and objects
     
     //Info boxes
-    public TextMeshProUGUI dialogueText;
-    public TextMeshProUGUI dialogueNameLeft;
-    public TextMeshProUGUI dialogueNameRight;
+    [SerializeField] private TextMeshProUGUI dialogueText;
+    [SerializeField] private TextMeshProUGUI dialogueNameLeft;
+    [SerializeField] private TextMeshProUGUI dialogueNameRight;
 
     //Sprites Speakers
-    public Image dialogueSpeakerLeft;
-    public Image dialogueSpeakerRight;
+    [SerializeField] private Image dialogueSpeakerLeft;
+    [SerializeField] private Image dialogueSpeakerRight;
+    [SerializeField] private Speakers defaultSpeaker;
     
     //color info boxes
-    public Image boxNameLeft;
-    public Image boxNameRight;
+    [SerializeField] private Image boxNameLeft;
+    [SerializeField] private Image boxNameRight;
 
     //SentenceIndex -1 to avoid errors and start dialogues at click
     private int sentenceIndex = -1;
 
     //Current Dialogue
-    public Dialogue currentDialogue;
+    [SerializeField] private Dialogue currentDialogue;
     [SerializeField] private Dialogue defaultDialogue;
 
     //initial state finished to avoid errors
@@ -50,7 +51,7 @@ public class DialogueController : MonoBehaviour
 
     private void Start()
     {
-        // ACTIVATION IN: GameManager Script too
+        // ACTIVATION IN: GameManager Script
         this.gameObject.SetActive(false); //Set GameObject Invisible, to use just when needed. 
     }
 
@@ -68,10 +69,10 @@ public class DialogueController : MonoBehaviour
     //Function to start dialogue
     public void PlayDialogue(Dialogue clickedDialogue)
     {
-        this.gameObject.SetActive(true);
-        currentDialogue = clickedDialogue;
-        sentenceIndex = -1;
-        PlaySentence();
+        currentDialogue = clickedDialogue; // Set the new Dialogue
+        sentenceIndex = -1; // To reset the SetneceIndex of the past Dialogue
+        ClearCharacters(); // To reset the characters sprites of the past Dialogue
+        PlaySentence(); 
     }
 
     private void NextSentence() //When a sentence is finished, allow to see the next one
@@ -116,7 +117,14 @@ public class DialogueController : MonoBehaviour
     #endregion
 
     #region Utility Functions
-    private void ChangeVisivility()
+
+    private void ClearCharacters() // Clear the characters sprites of the dialogue.
+    {
+        dialogueSpeakerLeft.sprite = defaultSpeaker.speakerSprite;
+        dialogueSpeakerRight.sprite = defaultSpeaker.speakerSprite;
+    }
+
+    private void ChangeVisivility() // Switchoff all boxes and names. To switch sides of speakers
     {
         //SetActive off ALL side information boxes
         dialogueNameLeft.gameObject.SetActive(false);
@@ -142,7 +150,7 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-    private IEnumerator TypeText(string text)
+    private IEnumerator TypeText(string text) // Makes the Corutine display letter to letter.
     {
         dialogueText.text = "";
         state = State.playing;
@@ -160,7 +168,7 @@ public class DialogueController : MonoBehaviour
         }
     }
 
-    private void ClosePopUp() 
+    private void ClosePopUp() // Close the Canva when finished the last Sentence of the dialogue. (with click)
     {
         //When the dialogue is finished (all the sentences) close de PopUp Dialogue Window
         if (state == State.finished && sentenceIndex == currentDialogue.Sentences.Count)

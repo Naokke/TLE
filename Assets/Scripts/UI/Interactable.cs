@@ -26,11 +26,17 @@ public class Interactable : MonoBehaviour
         {
             switch (interfaceName.ToUpper())
             {
-                case "TELEFONO":
-                    GameManager.Get();
-                    break;
-            }
-        }
+                case "PHONE":
+                    //If Password is already DONE, just Activate the phone Canva
+                    GameManager.Get().ActivePhone(GameManager.Get().IsPasswordSuccess);
 
+                    //If password is NOT DONE YET, activate the minigame Canva
+                    GameManager.Get().ActivePasswordMinigame(!GameManager.Get().IsPasswordSuccess);
+                    break;
+
+                case "XD":
+                    break;   
+            }            
+        }
     }
 }

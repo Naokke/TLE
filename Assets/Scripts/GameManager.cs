@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-    
+
     #region Singleton
     private static GameManager instance;
 
@@ -23,8 +23,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private DialogueController DialoguePopUp;
     [SerializeField] private Dialogue defaultD;
 
-    [SerializeField] private Canvas InteractableScreen;
-    [SerializeField] private Canvas PasswordMinigameCanva;
+    [SerializeField] private Canvas CanvaInteractableScreen;
+    [SerializeField] private Canvas CanvaPasswordMinigame;
+    [SerializeField] private Canvas CanvaPhoneScreen;
 
     #endregion
 
@@ -36,22 +37,42 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ActiveDialogue(Dialogue clickedDialogue, bool Activate) 
-    {
-        if (Activate)
-        {
-            // To SetActive() DialoguePopUp "window" and makes dialogue appear            
-            DialoguePopUp.PlayDialogue(clickedDialogue);
-            InteractableScreen.gameObject.SetActive(false);
-            DialoguePopUp.gameObject.SetActive(true);
-
-        } else if (!Activate)
-        {
-            DialoguePopUp.gameObject.SetActive(false);
-            InteractableScreen.gameObject.SetActive(true);
-        }
+    public void ActiveInteractableScreen(bool Active)
+    { 
+        CanvaInteractableScreen.gameObject.SetActive(Active);
     }
 
+    public void ActiveDialogue(Dialogue clickedDialogue, bool Activate)
+    {
+        DialoguePopUp.gameObject.SetActive(Activate);
+        DialoguePopUp.PlayDialogue(clickedDialogue);
+        ActiveInteractableScreen(!Activate);
+    }
 
+    #region Minigames PopUp
+
+    // Phone AND Passwordminigame:    
+
+    public bool IsPasswordSuccess { get; private set; } = false;
+
+    public void ActivePhone(bool Activate)
+    {
+        CanvaPhoneScreen.gameObject.SetActive(Activate);
+        ActiveInteractableScreen(!Activate);
+    }
+
+    public void ActivePasswordMinigame(bool Activate)
+    {
+        CanvaPasswordMinigame.gameObject.SetActive(Activate);
+        ActiveInteractableScreen(!Activate);
+    }
+
+    public void PasswordCheker(bool passwordSucceed)
+    {
+        IsPasswordSuccess = passwordSucceed;
+        Debug.Log("ContraseñaCorrecta");
+    }
+
+    #endregion
 
 }
