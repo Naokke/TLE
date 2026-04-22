@@ -33,9 +33,6 @@ public class Interactable : MonoBehaviour
                     //If password is NOT DONE YET, activate the minigame Canva
                     GameManager.Get().ActivePasswordMinigame(!GameManager.Get().IsPasswordSuccess);
                     break;
-
-                case "XD":
-                    break;   
             }            
         }
     }

@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class Dialogue : ScriptableObject
 {
     public List<Sentence> Sentences;
+    public bool dialogueOption;
 
     [System.Serializable]
     public struct Sentence
@@ -14,5 +15,6 @@ public class Dialogue : ScriptableObject
         public string text;
         public Speakers speaker;
         public bool isLeft;
+            
     }
 }

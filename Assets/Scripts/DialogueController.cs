@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -173,7 +174,14 @@ public class DialogueController : MonoBehaviour
         //When the dialogue is finished (all the sentences) close de PopUp Dialogue Window
         if (state == State.finished && sentenceIndex == currentDialogue.Sentences.Count)
         {
-            GameManager.Get().ActiveDialogue(defaultDialogue, false);
+            if (currentDialogue.dialogueOption)
+            {
+                GameManager.Get().ActiveOptionScreen(true);
+                
+            }else
+            {
+                GameManager.Get().ActiveDialogue(defaultDialogue, false);
+            }
         }
     }
     #endregion

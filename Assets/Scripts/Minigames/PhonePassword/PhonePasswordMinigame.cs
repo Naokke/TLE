@@ -5,6 +5,12 @@ public class PhonePasswordMinigame : MonoBehaviour
     private string password = "1234";
     private string currentTry = "";
 
+    private void Start()
+    {
+        // ACTIVATION IN: GameManager Script
+        this.gameObject.SetActive(false); //Set GameObject Invisible, to use just when needed. 
+    }
+
     public void buttonPasswordPressed(int number)
     {
         Debug.Log($"Contraseña Actual: {password}, intento actual: {currentTry}");
