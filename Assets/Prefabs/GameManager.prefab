@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6120395044844402725
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2773894398291858049}
+  - component: {fileID: 8796615714769389525}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2773894398291858049
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120395044844402725}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 482.75, y: 44.93735, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8796615714769389525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6120395044844402725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4cca39f8c0af4a64ea79b8793caa8135, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  DialoguePopUp: {fileID: 3623934802406206935, guid: b19ccb58b94d1eb409801fcaed3637cf, type: 3}
+  defaultDialogue: {fileID: 11400000, guid: 6738a946c6dc62b448d5dcf3ce046d86, type: 2}
+  CanvaInteractableScreen: {fileID: 2020809041846241694, guid: 0be20efd6070cc44eb7b24bc1062ad03, type: 3}
+  CanvaPasswordMinigame: {fileID: 6357860256134357744, guid: f2e62d343384bf440a4678979e4f0e88, type: 3}
+  CanvaPhoneScreen: {fileID: 8277922370051349506, guid: fd23a976dd8922c45b6622366b6a68f6, type: 3}
+  OptionDialogueScreen: {fileID: 8082143941856701418, guid: 80f99604543953e45a9095bb94521bd7, type: 3}
+  SettingsScreen: {fileID: 2353389245963399017, guid: ecb4aa653b4d3bb4982363a9244ca699, type: 3}

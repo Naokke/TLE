@@ -16,9 +16,10 @@ MonoBehaviour:
   - text: Este es el dialogo 2 de ejemplo
     speaker: {fileID: 11400000, guid: 1b30856fb5261da4ebe2db9667be69c7, type: 2}
     isLeft: 1
-  - text: 'Ubuntu '
+  - text: 'Ubuntu Ubuntu Ubuntu Ubuntu Ubuntu Ubuntu '
     speaker: {fileID: 11400000, guid: 1b30856fb5261da4ebe2db9667be69c7, type: 2}
     isLeft: 1
-  - text: Xubuntu
+  - text: Xubuntu XubuntuXubuntuXubuntuXubuntuXubuntu
     speaker: {fileID: 11400000, guid: a5905a3c3bb578b48b38b0392aca289a, type: 2}
     isLeft: 0
+  dialogueOption: 0

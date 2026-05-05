@@ -2,22 +2,10 @@ using System;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
-
-    #region Singleton
-    private static GameManager instance;
-
-    public static GameManager Get()
-    {
-        if (instance == null)
-        {
-            instance = FindFirstObjectByType<GameManager>();
-        }
-        return instance;
-    }
-    #endregion
 
     #region Variables and Objects
 
@@ -28,6 +16,10 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Canvas CanvaPasswordMinigame;
     [SerializeField] private Canvas CanvaPhoneScreen;
     [SerializeField] private Canvas OptionDialogueScreen;
+    [SerializeField] private Canvas SettingsScreen;
+
+    // Settings Variables
+    private bool _isSettingsOpen = false;
 
     // Level 1 variables.
 
@@ -50,7 +42,6 @@ public class GameManager : MonoBehaviour
                     break;
             }
         }
-
     }
 
     #endregion
@@ -90,6 +81,21 @@ public class GameManager : MonoBehaviour
         ActiveInteractableScreen(!Activate);
     }
 
+    public void OpenSettings()
+    {
+        if (!_isSettingsOpen)
+        {
+            SceneManager.LoadScene(2, LoadSceneMode.Additive);
+            _isSettingsOpen = true;
+        }else
+        {
+            SceneManager.UnloadSceneAsync(2);
+            _isSettingsOpen = false;
+            //QUITAR ESCENA DE AJUSTES
+        }
+        
+    }
+
     #endregion
 
     #region Minigames PopUp
@@ -113,9 +119,6 @@ public class GameManager : MonoBehaviour
             ActivePasswordMinigame(false);
         }
     }
-
-
-
     #endregion
 
 }

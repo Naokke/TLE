@@ -21,6 +21,7 @@ public class Interactable : MonoBehaviour
         {
             Debug.Log("Clicked successfully");
             GameManager.Get().ActiveDialogue(dialogue, true);
+            button.interactable = false;
         }
         else
         {

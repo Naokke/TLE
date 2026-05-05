@@ -33,6 +33,9 @@ public class DialogueController : MonoBehaviour
     [SerializeField] private Dialogue currentDialogue;
     [SerializeField] private Dialogue defaultDialogue;
 
+    //
+    private bool Skip = false;
+
     //initial state finished to avoid errors
     private State state = State.finished;
 
@@ -57,7 +60,7 @@ public class DialogueController : MonoBehaviour
     }
 
     private void Update()
-    {
+    {            
         //When a sentence is finished, allow to see the next one
         NextSentence();
         ClosePopUp(); //Close the PopUp Dialogue window
@@ -90,8 +93,9 @@ public class DialogueController : MonoBehaviour
 
     // Play the "next" sentence (Always start sentence at -1 to work)
     private void PlaySentence()
-    {       
+    {
         //Type dialogue text by Coroutine, time between letters is .05 seconds
+        StopAllCoroutines();
         StartCoroutine(TypeText(currentDialogue.Sentences[++sentenceIndex].text));
 
         if (currentDialogue.Sentences[sentenceIndex].isLeft)
@@ -157,16 +161,26 @@ public class DialogueController : MonoBehaviour
         state = State.playing;
         int wordIndex = 0;
 
+        yield return null;
+
         while (state != State.finished)
         {
+            if (Skip)
+            {
+                dialogueText.text = text;
+                state = State.finished;
+                Skip = false;
+                break;                
+            }
             dialogueText.text += text[wordIndex];
             yield return new WaitForSeconds(0.05f);
             if (++wordIndex == text.Length)
             {
                 state = State.finished;
+                Skip = false;
                 break;
             }
-        }
+        }        
     }
 
     private void ClosePopUp() // Close the Canva when finished the last Sentence of the dialogue. (with click)
