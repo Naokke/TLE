@@ -44,10 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cca39f8c0af4a64ea79b8793caa8135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  DialoguePopUp: {fileID: 3623934802406206935, guid: b19ccb58b94d1eb409801fcaed3637cf, type: 3}
+  dialoguePopUp: {fileID: 3623934802406206935, guid: b19ccb58b94d1eb409801fcaed3637cf, type: 3}
   defaultDialogue: {fileID: 11400000, guid: 6738a946c6dc62b448d5dcf3ce046d86, type: 2}
-  CanvaInteractableScreen: {fileID: 2020809041846241694, guid: 0be20efd6070cc44eb7b24bc1062ad03, type: 3}
-  CanvaPasswordMinigame: {fileID: 6357860256134357744, guid: f2e62d343384bf440a4678979e4f0e88, type: 3}
-  CanvaPhoneScreen: {fileID: 8277922370051349506, guid: fd23a976dd8922c45b6622366b6a68f6, type: 3}
-  OptionDialogueScreen: {fileID: 8082143941856701418, guid: 80f99604543953e45a9095bb94521bd7, type: 3}
-  SettingsScreen: {fileID: 2353389245963399017, guid: ecb4aa653b4d3bb4982363a9244ca699, type: 3}
+  canvaInteractableScreen: {fileID: 2020809041846241694, guid: 0be20efd6070cc44eb7b24bc1062ad03, type: 3}
+  canvaPasswordMinigame: {fileID: 6357860256134357744, guid: f2e62d343384bf440a4678979e4f0e88, type: 3}
+  canvaPhoneScreen: {fileID: 8277922370051349506, guid: fd23a976dd8922c45b6622366b6a68f6, type: 3}
+  optionDialogueScreen: {fileID: 8082143941856701418, guid: 80f99604543953e45a9095bb94521bd7, type: 3}
+  settingsScreen: {fileID: 2353389245963399017, guid: ecb4aa653b4d3bb4982363a9244ca699, type: 3}
+  sceneMainMenu: Menu
+  sceneGame: InGame
+  sceneSettings: Settings

@@ -9,13 +9,13 @@ using UnityEngine.UI;
 public class PasswordInteractable : MonoBehaviour
 {
     private Button button;
-    private PhonePasswordMinigame minigame;
+    [SerializeField] private PhonePasswordMinigame minigame;
     [SerializeField] private int buttonValue;
              
     private void Start()
     {
         button = GetComponent<Button>();
-        minigame = GetComponentInParent<PhonePasswordMinigame>();
+        
         button.onClick.AddListener(OnButtonClicked);
     }
     private void OnButtonClicked()

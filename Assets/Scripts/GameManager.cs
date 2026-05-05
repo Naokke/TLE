@@ -9,17 +9,27 @@ public class GameManager : Singleton<GameManager>
 
     #region Variables and Objects
 
-    [SerializeField] private DialogueController DialoguePopUp;
+    [Header("Dialogues")]
+    [SerializeField] private DialogueController dialoguePopUp;
     [SerializeField] private Dialogue defaultDialogue;
 
-    [SerializeField] private Canvas CanvaInteractableScreen;
-    [SerializeField] private Canvas CanvaPasswordMinigame;
-    [SerializeField] private Canvas CanvaPhoneScreen;
-    [SerializeField] private Canvas OptionDialogueScreen;
-    [SerializeField] private Canvas SettingsScreen;
+    [Header("Canvas")]
+    [SerializeField] private Canvas canvaInteractableScreen;
+    [SerializeField] private Canvas canvaPasswordMinigame;
+    [SerializeField] private Canvas canvaPhoneScreen;
+    [SerializeField] private Canvas optionDialogueScreen;
+    [SerializeField] private Canvas settingsScreen;
+
+    [Header("Scenes")]
+    [SerializeField] private string sceneMainMenu;
+    [SerializeField] private string sceneGame;
+    [SerializeField] private string sceneSettings;   
 
     // Settings Variables
     private bool _isSettingsOpen = false;
+
+    public bool IsPasswordSuccess { get; private set; } = false;
+
 
     // Level 1 variables.
 
@@ -46,38 +56,38 @@ public class GameManager : Singleton<GameManager>
 
     #endregion
 
-    #region Update and Actives
+    #region Start, Update and Actives
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.F)) // TO DEBUG THINGS (TEMPORAL)
         {
-            DialoguePopUp.PlayDialogue(defaultDialogue); //Debugging DialoguePopUp
+            dialoguePopUp.PlayDialogue(defaultDialogue); //Debugging DialoguePopUp
         }
     }
 
     public void ActiveInteractableScreen(bool Active)
     { 
-        CanvaInteractableScreen.gameObject.SetActive(Active);
+        canvaInteractableScreen.gameObject.SetActive(Active);
     }
 
     public void ActiveDialogue(Dialogue clickedDialogue, bool Activate)
     {
-        DialoguePopUp.gameObject.SetActive(Activate);
-        DialoguePopUp.PlayDialogue(clickedDialogue);
+        dialoguePopUp.gameObject.SetActive(Activate);
+        dialoguePopUp.PlayDialogue(clickedDialogue);
         ActiveInteractableScreen(!Activate);
     }
 
     public void ActiveOptionScreen(bool Activate)
     {
-        OptionDialogueScreen.gameObject.SetActive(Activate);
+        optionDialogueScreen.gameObject.SetActive(Activate);
         ActiveDialogue(defaultDialogue,!Activate);
         ActiveInteractableScreen(!Activate);
     }
 
     public void ActivePhone(bool Activate)
     {
-        CanvaPhoneScreen.gameObject.SetActive(Activate);
+        canvaPhoneScreen.gameObject.SetActive(Activate);
         ActiveInteractableScreen(!Activate);
     }
 
@@ -85,7 +95,7 @@ public class GameManager : Singleton<GameManager>
     {
         if (!_isSettingsOpen)
         {
-            SceneManager.LoadScene(2, LoadSceneMode.Additive);
+            SceneManager.LoadScene(sceneSettings, LoadSceneMode.Additive);
             _isSettingsOpen = true;
         }else
         {
@@ -102,11 +112,11 @@ public class GameManager : Singleton<GameManager>
 
     // Phone AND Passwordminigame:    
 
-    public bool IsPasswordSuccess { get; private set; } = false;
+    
 
     public void ActivePasswordMinigame(bool Activate)
     {
-        CanvaPasswordMinigame.gameObject.SetActive(Activate);
+        canvaPasswordMinigame.gameObject.SetActive(Activate);
         ActiveInteractableScreen(!Activate);
     }
 

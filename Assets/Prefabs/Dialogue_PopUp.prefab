@@ -563,6 +563,7 @@ MonoBehaviour:
   dialogueNameRight: {fileID: 4475064917386832828}
   dialogueSpeakerLeft: {fileID: 4638674083910260215}
   dialogueSpeakerRight: {fileID: 849113416900625726}
+  defaultSpeaker: {fileID: 11400000, guid: a62a3c7a793558946aa12492ed4740bc, type: 2}
   boxNameLeft: {fileID: 2661324503454432013}
   boxNameRight: {fileID: 8141096644840782226}
   currentDialogue: {fileID: 11400000, guid: 6738a946c6dc62b448d5dcf3ce046d86, type: 2}
@@ -629,16 +630,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4247159962338563340}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6393333104470755018}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -550, y: -450}
+  m_AnchoredPosition: {x: 550, y: -450}
   m_SizeDelta: {x: 453, y: 1611}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5896959083284136393
@@ -1011,16 +1012,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8512157014077832155}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6393333104470755018}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 550, y: -450}
+  m_AnchoredPosition: {x: -550, y: -450}
   m_SizeDelta: {x: 453, y: 1611}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1400667170060902728

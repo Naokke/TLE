@@ -171,6 +171,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameManager
       objectReference: {fileID: 0}
+    - target: {fileID: 8796615714769389525, guid: c9aa519b816ee9949a1dabb70616233a, type: 3}
+      propertyPath: dialoguePopUp
+      value: 
+      objectReference: {fileID: 3623934802406206935, guid: b19ccb58b94d1eb409801fcaed3637cf, type: 3}
+    - target: {fileID: 8796615714769389525, guid: c9aa519b816ee9949a1dabb70616233a, type: 3}
+      propertyPath: settingsScreen
+      value: 
+      objectReference: {fileID: 2353389245963399017, guid: ecb4aa653b4d3bb4982363a9244ca699, type: 3}
+    - target: {fileID: 8796615714769389525, guid: c9aa519b816ee9949a1dabb70616233a, type: 3}
+      propertyPath: canvaPhoneScreen
+      value: 
+      objectReference: {fileID: 8277922370051349506, guid: fd23a976dd8922c45b6622366b6a68f6, type: 3}
+    - target: {fileID: 8796615714769389525, guid: c9aa519b816ee9949a1dabb70616233a, type: 3}
+      propertyPath: optionDialogueScreen
+      value: 
+      objectReference: {fileID: 8082143941856701418, guid: 80f99604543953e45a9095bb94521bd7, type: 3}
+    - target: {fileID: 8796615714769389525, guid: c9aa519b816ee9949a1dabb70616233a, type: 3}
+      propertyPath: canvaPasswordMinigame
+      value: 
+      objectReference: {fileID: 6357860256134357744, guid: f2e62d343384bf440a4678979e4f0e88, type: 3}
+    - target: {fileID: 8796615714769389525, guid: c9aa519b816ee9949a1dabb70616233a, type: 3}
+      propertyPath: canvaInteractableScreen
+      value: 
+      objectReference: {fileID: 2020809041846241694, guid: 0be20efd6070cc44eb7b24bc1062ad03, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1,8 +1,11 @@
+using TMPro;
 using UnityEngine;
 
 public class PhonePasswordMinigame : MonoBehaviour
 {
-    private string password = "1234";
+    [SerializeField] TMP_Text displayPassword;
+
+    private string password = "2950";
     private string currentTry = "";
 
     private void Start()
@@ -13,8 +16,7 @@ public class PhonePasswordMinigame : MonoBehaviour
 
     public void buttonPasswordPressed(int number)
     {
-        Debug.Log($"Contraseña Actual: {password}, intento actual: {currentTry}");
-
+        
         if (number <= 10) // 0 - 9 numbers aviable.
         {
             AddDigit(number);
@@ -37,24 +39,28 @@ public class PhonePasswordMinigame : MonoBehaviour
     private void AddDigit(int number)
     {
         currentTry += number.ToString();
+        Debug.Log($"Contraseña Actual: {password}, intento actual: {currentTry}");
+        displayPassword.text = currentTry;
     }
 
     private void CheckPassword()
     {
-        if (currentTry.Length > 4)
-        {
-            DeleteTry();
-            return;
-        }
         if (currentTry.Length <= 4 && currentTry == password)
         {
             GameManager.Get().PasswordCheker(true);
             this.gameObject.SetActive(false);
         }
+        if (currentTry.Length >= 4)
+        {
+            DeleteTry();
+            return;
+        }
+        
     }
 
     private void DeleteTry()
     {
         currentTry = "";
+        displayPassword.text = currentTry;
     }
 }
