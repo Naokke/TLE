@@ -11,6 +11,7 @@ public class PhoneAppManager : MonoBehaviour
 
     private void Start()
     {
+        
         this.gameObject.SetActive(false);
     }
 
@@ -27,10 +28,7 @@ public class PhoneAppManager : MonoBehaviour
         ClearScreen();
         if (appIndex >= 0 && appIndex < apps.Count)
         {
-            apps[appIndex].gameObject.SetActive(true);
-        }else if (appIndex == 0)
-        {
-            HomeScreen();
+            screens[appIndex].gameObject.SetActive(true);
         }
     }
 
