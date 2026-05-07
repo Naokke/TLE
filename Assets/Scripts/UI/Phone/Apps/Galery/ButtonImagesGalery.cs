@@ -21,6 +21,7 @@ public class ButtonImagesGalery : MonoBehaviour
 
     private void ZoomPiture()
     {
+        Debug.Log("Zoomed Succesfully");
         manager.ZoomPicture(Picture);
     }
 }

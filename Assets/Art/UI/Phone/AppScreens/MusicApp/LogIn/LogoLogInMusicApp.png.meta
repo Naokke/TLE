@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 800f7ec38f28aac48b6927bcfcb5fe7d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8706942322367289378
+    second: LogoLogInMusicApp_0
+  - first:
+      213: -2435420617747041632
+    second: LogoLogInMusicApp_1
+  - first:
+      213: -3125002798887754597
+    second: LogoLogInMusicApp_2
+  - first:
+      213: 4384942946651806682
+    second: LogoLogInMusicApp_3
+  - first:
+      213: 6071703342447576567
+    second: LogoLogInMusicApp_4
+  - first:
+      213: 5710795215364687501
+    second: LogoLogInMusicApp_5
+  - first:
+      213: -4448513765593088301
+    second: LogoLogInMusicApp_6
+  - first:
+      213: -1265354484693508387
+    second: LogoLogInMusicApp_7
+  - first:
+      213: -3657144806004761670
+    second: LogoLogInMusicApp_8
+  - first:
+      213: -3299907478972416467
+    second: LogoLogInMusicApp_9
+  - first:
+      213: 1520648863563097999
+    second: LogoLogInMusicApp_10
+  - first:
+      213: -8458189642487587241
+    second: LogoLogInMusicApp_11
+  - first:
+      213: -1440024665227705632
+    second: LogoLogInMusicApp_12
+  - first:
+      213: 2217162868745797182
+    second: LogoLogInMusicApp_13
+  - first:
+      213: 4462704031146402819
+    second: LogoLogInMusicApp_14
+  - first:
+      213: -4116229205445203249
+    second: LogoLogInMusicApp_15
+  - first:
+      213: -8054995780085757731
+    second: LogoLogInMusicApp_16
+  - first:
+      213: -7567705611007106459
+    second: LogoLogInMusicApp_17
+  - first:
+      213: 6935135316527158376
+    second: LogoLogInMusicApp_18
+  - first:
+      213: 2985714841348674197
+    second: LogoLogInMusicApp_19
+  - first:
+      213: -1018798178136653771
+    second: LogoLogInMusicApp_20
+  - first:
+      213: -8166343839282136244
+    second: LogoLogInMusicApp_21
+  - first:
+      213: 5988884068551224625
+    second: LogoLogInMusicApp_22
+  - first:
+      213: -3986881460864036512
+    second: LogoLogInMusicApp_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 168
+        width: 185
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 228548c29e545d870800000000000000
+      internalID: 8706942322367289378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_1
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 92
+        width: 24
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a276800ad5a33ed0800000000000000
+      internalID: -2435420617747041632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 124
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b94a13ae282c1a4d0800000000000000
+      internalID: -3125002798887754597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 124
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adb1987a0627adc30800000000000000
+      internalID: 4384942946651806682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_4
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 92
+        width: 25
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5c32c4506034450800000000000000
+      internalID: 6071703342447576567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_5
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 86
+        width: 23
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8600d4cdf1d04f40800000000000000
+      internalID: 5710795215364687501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_6
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 92
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3de7367ac44b342c0800000000000000
+      internalID: -4448513765593088301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_7
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 92
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde55e0ecce807ee0800000000000000
+      internalID: -1265354484693508387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_8
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 92
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbdbe1ec263f3dc0800000000000000
+      internalID: -3657144806004761670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_9
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 92
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2eb13ca1af5432d0800000000000000
+      internalID: -3299907478972416467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_10
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 92
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87a7cca51e6a1510800000000000000
+      internalID: 1520648863563097999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_11
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 92
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e93a465597e9a80800000000000000
+      internalID: -8458189642487587241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_12
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 92
+        width: 7
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e24d415231040ce0800000000000000
+      internalID: -1440024665227705632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_13
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 92
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e77c0d1e1f4ce10800000000000000
+      internalID: 2217162868745797182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_14
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 92
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3046f220ca5beed30800000000000000
+      internalID: 4462704031146402819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_15
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 92
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcaa95ba85730e6c0800000000000000
+      internalID: -4116229205445203249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_16
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 13
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd8c7b4e308e63090800000000000000
+      internalID: -8054995780085757731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_17
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 14
+        width: 34
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562e03b97db1af690800000000000000
+      internalID: -7567705611007106459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_18
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 13
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8641ed293dc8e3060800000000000000
+      internalID: 6935135316527158376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_19
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 14
+        width: 51
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 592133744d36f6920800000000000000
+      internalID: 2985714841348674197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_20
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 13
+        width: 38
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530895e64708cd1f0800000000000000
+      internalID: -1018798178136653771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_21
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 13
+        width: 32
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b73e99b815bae80800000000000000
+      internalID: -8166343839282136244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_22
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 14
+        width: 12
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13dedf2745acc1350800000000000000
+      internalID: 5988884068551224625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LogoLogInMusicApp_23
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 13
+        width: 36
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061db9b4f60cba8c0800000000000000
+      internalID: -3986881460864036512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LogoLogInMusicApp_0: 8706942322367289378
+      LogoLogInMusicApp_1: -2435420617747041632
+      LogoLogInMusicApp_10: 1520648863563097999
+      LogoLogInMusicApp_11: -8458189642487587241
+      LogoLogInMusicApp_12: -1440024665227705632
+      LogoLogInMusicApp_13: 2217162868745797182
+      LogoLogInMusicApp_14: 4462704031146402819
+      LogoLogInMusicApp_15: -4116229205445203249
+      LogoLogInMusicApp_16: -8054995780085757731
+      LogoLogInMusicApp_17: -7567705611007106459
+      LogoLogInMusicApp_18: 6935135316527158376
+      LogoLogInMusicApp_19: 2985714841348674197
+      LogoLogInMusicApp_2: -3125002798887754597
+      LogoLogInMusicApp_20: -1018798178136653771
+      LogoLogInMusicApp_21: -8166343839282136244
+      LogoLogInMusicApp_22: 5988884068551224625
+      LogoLogInMusicApp_23: -3986881460864036512
+      LogoLogInMusicApp_3: 4384942946651806682
+      LogoLogInMusicApp_4: 6071703342447576567
+      LogoLogInMusicApp_5: 5710795215364687501
+      LogoLogInMusicApp_6: -4448513765593088301
+      LogoLogInMusicApp_7: -1265354484693508387
+      LogoLogInMusicApp_8: -3657144806004761670
+      LogoLogInMusicApp_9: -3299907478972416467
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

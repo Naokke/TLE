@@ -4,20 +4,32 @@ using UnityEngine.UI;
 
 public class GaleryManager : MonoBehaviour
 {
-    [SerializeField] private List<ButtonImagesGalery> buttonPictures;
+    [SerializeField] private GridLayoutGroup galeryGrid;
+
+    [Header ("ZoomPicture Button and Image")]
     [SerializeField] private Image zoomedPicture;
+    [SerializeField] private Button buttonZoomedPicture;
 
     private void Start()
     {
-        buttonPictures = new List<ButtonImagesGalery>();
+        buttonZoomedPicture.onClick.AddListener(ExitZoom);
+
+
+        zoomedPicture.gameObject.SetActive(false);
         this.gameObject.SetActive(false);
     }
 
     public void ZoomPicture(Sprite picture)
     {
-        zoomedPicture.gameObject.SetActive(true);
+        zoomedPicture.gameObject.SetActive(true);        
         zoomedPicture.sprite = picture;
+        zoomedPicture.SetNativeSize();
+        galeryGrid.gameObject.SetActive(false);
+    }    
+
+    public void ExitZoom()
+    {
+        galeryGrid.gameObject.SetActive(true);
+        zoomedPicture.gameObject.SetActive(false); 
     }
-
-
 }

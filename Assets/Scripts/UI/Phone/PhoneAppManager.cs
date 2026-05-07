@@ -1,17 +1,21 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class PhoneAppManager : MonoBehaviour
+public class PhoneAppManager : Singleton<PhoneAppManager>
 {
-    [SerializeField] private GameObject homeButton;
+    [SerializeField] private Button homeButton;
+    private int currentApp;
 
     [SerializeField] private List<AppsInteactable> apps;
     [SerializeField] private List<GameObject> screens;
 
     private void Start()
     {
-        
+        homeButton.onClick.AddListener(HomeScreen);
+
         this.gameObject.SetActive(false);
     }
 
@@ -24,11 +28,12 @@ public class PhoneAppManager : MonoBehaviour
     }
 
     public void ActiveApp(int appIndex)
-    {
-        ClearScreen();
+    {        
         if (appIndex >= 0 && appIndex < apps.Count)
         {
+            ClearScreen();
             screens[appIndex].gameObject.SetActive(true);
+            currentApp = appIndex;
         }
     }
 
