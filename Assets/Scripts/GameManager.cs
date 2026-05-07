@@ -125,7 +125,7 @@ public class GameManager : Singleton<GameManager>
         if (passwordSucceed == true)
         {
             IsPasswordSuccess = passwordSucceed;
-            Debug.Log("ContraseñaCorrecta");
+            Debug.Log("Contraseï¿½aCorrecta");
             ActivePasswordMinigame(false);
         }
     }
