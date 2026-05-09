@@ -10,8 +10,8 @@ public class MusicAppLogInMinigame : MonoBehaviour
     [SerializeField] TMP_InputField inputPassword;
     [SerializeField] Button buttonLogIn;
 
-    private string username = "abcd";
-    private string password = "zx";
+    private string username = "Lanna";
+    private string password = "michito123*";
 
 
     private void Start()

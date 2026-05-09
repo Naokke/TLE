@@ -12,9 +12,11 @@ public class PhoneAppManager : Singleton<PhoneAppManager>
     [SerializeField] private List<AppsInteactable> apps;
     [SerializeField] private List<GameObject> screens;
     [SerializeField] private GameObject musicScreenHome;
-
     [SerializeField] private GameObject musicLogInMinigame;
-    [SerializeField]private bool _isMusicUnlocked = false;
+    [SerializeField] private GameObject musicCaptChaMinigame;
+
+    private bool _isMusicUnlocked = false;
+    private bool _isCaptChaUnlocked = false;
 
     private void Start()
     {
@@ -27,6 +29,7 @@ public class PhoneAppManager : Singleton<PhoneAppManager>
     private void ClearScreen()
     {
         musicLogInMinigame.gameObject.SetActive(false);
+        musicCaptChaMinigame.gameObject.SetActive(false);
         musicScreenHome.gameObject.SetActive(false);
         foreach (var appScreen in screens)
         {
@@ -42,21 +45,28 @@ public class PhoneAppManager : Singleton<PhoneAppManager>
             screens[appIndex].gameObject.SetActive(true);
             if (appIndex == 3)
             {                
-                MusicAppPasswordMinigame(_isMusicUnlocked);                                
+                MusicAppMinigame();                                
             }            
         }
     }
 
     public void LogIn(bool logIn)
     {
-        _isMusicUnlocked = logIn;
-        MusicAppPasswordMinigame(_isMusicUnlocked);
+        _isCaptChaUnlocked = logIn;
+        MusicAppMinigame();
     }
 
-    private void MusicAppPasswordMinigame(bool Activate)
+    public void CaptChaSuccess(bool Completed)
     {
-        musicScreenHome.gameObject.SetActive(Activate);
-        musicLogInMinigame.gameObject.SetActive(!Activate);
+        _isMusicUnlocked = Completed;
+        MusicAppMinigame();
+    }
+
+    private void MusicAppMinigame()
+    {
+        musicScreenHome.gameObject.SetActive(_isMusicUnlocked);
+        musicCaptChaMinigame.gameObject.SetActive(!_isMusicUnlocked);
+        musicLogInMinigame.gameObject.SetActive(!_isCaptChaUnlocked);
     }
 
     public void HomeScreen()
