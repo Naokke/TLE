@@ -23,7 +23,7 @@ public class GaleryManager : MonoBehaviour
     {
         zoomedPicture.gameObject.SetActive(true);        
         zoomedPicture.sprite = picture;
-        zoomedPicture.SetNativeSize();
+        zoomedPicture.preserveAspect = true;        
         galeryGrid.gameObject.SetActive(false);
     }    
 

@@ -1,4 +1,3 @@
-using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -29,6 +28,20 @@ public class Settings : MonoBehaviour
         Backbutton.onClick.AddListener(CloseSettings);
 
         CheckRes();
+        SetPlayerPref();
+    }
+
+    private void SetPlayerPref()
+    {
+        ResChange(PlayerPrefs.GetInt("PlayerResolution"));
+
+        if (PlayerPrefs.GetInt("PlayerFullScreen") == 1)
+        {
+            _isFullScreen = true;
+        }else
+        {
+            _isFullScreen= false;
+        }
     }
 
     private void CloseSettings()
@@ -39,12 +52,20 @@ public class Settings : MonoBehaviour
     private void ActivateFullScreen(bool activate)
     {
         _isFullScreen = activate;
-        ApplyRes();
+        if (activate)
+        {
+            PlayerPrefs.SetInt("PlayerFullScreen", 1);
+        }else
+        {
+            PlayerPrefs.SetInt("PlayerFullScreen", 0);
+        }
+            ApplyRes();
     }
 
     private void ResChange(int selecRes)
     {
         selectedRes = resolutions[selecRes];
+        PlayerPrefs.SetInt("PlayerResolution",selecRes);
         ApplyRes();
     }
 

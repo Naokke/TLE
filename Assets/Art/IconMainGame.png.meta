@@ -1,0 +1,1313 @@
+fileFormatVersion: 2
+guid: 2f65153e6c19c4441944fb8c12c9cabf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8824387085517868866
+    second: IconMainGame_0
+  - first:
+      213: 4795011886698418106
+    second: IconMainGame_1
+  - first:
+      213: 2841142561426957794
+    second: IconMainGame_2
+  - first:
+      213: -491314659403187646
+    second: IconMainGame_3
+  - first:
+      213: 1305651055915908999
+    second: IconMainGame_4
+  - first:
+      213: 1009163234300889743
+    second: IconMainGame_5
+  - first:
+      213: 4843764200388409668
+    second: IconMainGame_6
+  - first:
+      213: 7769540081794637541
+    second: IconMainGame_7
+  - first:
+      213: -5244268321261268786
+    second: IconMainGame_8
+  - first:
+      213: -1037867861110397308
+    second: IconMainGame_9
+  - first:
+      213: 2325189172853440378
+    second: IconMainGame_10
+  - first:
+      213: 717647982693118993
+    second: IconMainGame_11
+  - first:
+      213: 6247669007148718598
+    second: IconMainGame_12
+  - first:
+      213: 4578055253078231506
+    second: IconMainGame_13
+  - first:
+      213: -523900680248515258
+    second: IconMainGame_14
+  - first:
+      213: 5330919681969179503
+    second: IconMainGame_15
+  - first:
+      213: 5810179625917930337
+    second: IconMainGame_16
+  - first:
+      213: 6688010460856389072
+    second: IconMainGame_17
+  - first:
+      213: 2377635057791062695
+    second: IconMainGame_18
+  - first:
+      213: 8240951631497888744
+    second: IconMainGame_19
+  - first:
+      213: 4189087140710964053
+    second: IconMainGame_20
+  - first:
+      213: -1843301761940711750
+    second: IconMainGame_21
+  - first:
+      213: -1537270005180192443
+    second: IconMainGame_22
+  - first:
+      213: -2653450213987136551
+    second: IconMainGame_23
+  - first:
+      213: 6467904721971114776
+    second: IconMainGame_24
+  - first:
+      213: 7786400249702045568
+    second: IconMainGame_25
+  - first:
+      213: 2200321555790762839
+    second: IconMainGame_26
+  - first:
+      213: -7067935310486219082
+    second: IconMainGame_27
+  - first:
+      213: 5879701034304233392
+    second: IconMainGame_28
+  - first:
+      213: 5404750888778868849
+    second: IconMainGame_29
+  - first:
+      213: 2657491574750888177
+    second: IconMainGame_30
+  - first:
+      213: -6319978958474082993
+    second: IconMainGame_31
+  - first:
+      213: -214181440394729002
+    second: IconMainGame_32
+  - first:
+      213: 6921938296035298406
+    second: IconMainGame_33
+  - first:
+      213: 3079619182056549071
+    second: IconMainGame_34
+  - first:
+      213: -6630592431834197088
+    second: IconMainGame_35
+  - first:
+      213: 2166475470457408565
+    second: IconMainGame_36
+  - first:
+      213: -9078027441341269502
+    second: IconMainGame_37
+  - first:
+      213: -8112933280724253360
+    second: IconMainGame_38
+  - first:
+      213: -5004633619888552892
+    second: IconMainGame_39
+  - first:
+      213: -667210020491453495
+    second: IconMainGame_40
+  - first:
+      213: 4410128342566168157
+    second: IconMainGame_41
+  - first:
+      213: 5962258393684803961
+    second: IconMainGame_42
+  - first:
+      213: -485757298467078256
+    second: IconMainGame_43
+  - first:
+      213: 6788354378452204052
+    second: IconMainGame_44
+  - first:
+      213: 2187874759004225263
+    second: IconMainGame_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IconMainGame_0
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 630
+        width: 119
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f46d8fc45867a70800000000000000
+      internalID: 8824387085517868866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_1
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 769
+        width: 106
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf4f68e7ed4b8240800000000000000
+      internalID: 4795011886698418106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_2
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 732
+        width: 91
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5e81a4b14cd6720800000000000000
+      internalID: 2841142561426957794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_3
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 874
+        width: 21
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24ab45d9bef7e29f0800000000000000
+      internalID: -491314659403187646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_4
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 884
+        width: 23
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f3b7cb7ba9e1210800000000000000
+      internalID: 1305651055915908999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_5
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 797
+        width: 92
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a83e46d94410e00800000000000000
+      internalID: 1009163234300889743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_6
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 848
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 449b7eb70e1883340800000000000000
+      internalID: 4843764200388409668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_7
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 861
+        width: 21
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ee57832a83f2db60800000000000000
+      internalID: 7769540081794637541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_8
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 833
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec053644fbd9837b0800000000000000
+      internalID: -5244268321261268786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_9
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 680
+        width: 58
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48668bedda0c891f0800000000000000
+      internalID: -1037867861110397308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_10
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 792
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f738bbb3bb44020800000000000000
+      internalID: 2325189172853440378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 706
+        width: 78
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 114f23ab90995f900800000000000000
+      internalID: 717647982693118993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_12
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 705
+        width: 80
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60a11554cdd24b650800000000000000
+      internalID: 6247669007148718598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_13
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 776
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9c6d14ff4888f30800000000000000
+      internalID: 4578055253078231506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_14
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 764
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 645a3386b1bbab8f0800000000000000
+      internalID: -523900680248515258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_15
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 764
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6b49e1d43b3bf940800000000000000
+      internalID: 5330919681969179503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_16
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 730
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bdc0c0697e1a050800000000000000
+      internalID: 5810179625917930337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_17
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 766
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd017d541690dc50800000000000000
+      internalID: 6688010460856389072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_18
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 763
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2d621ec7e0ff020800000000000000
+      internalID: 2377635057791062695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_19
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 749
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e38b9ea8ddbd5270800000000000000
+      internalID: 8240951631497888744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_20
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 740
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bdb3b4f80a22a30800000000000000
+      internalID: 4189087140710964053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_21
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 738
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab61ca150d64b66e0800000000000000
+      internalID: -1843301761940711750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_22
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 750
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5492f5933158aaae0800000000000000
+      internalID: -1537270005180192443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_23
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 739
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dbcc16c61d0d2bd0800000000000000
+      internalID: -2653450213987136551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_24
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 743
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 813f822831d92c950800000000000000
+      internalID: 6467904721971114776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_25
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 732
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087d082e5c9de0c60800000000000000
+      internalID: 7786400249702045568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_26
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 740
+        width: 19
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7531b841ccc198e10800000000000000
+      internalID: 2200321555790762839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_27
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 589
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b6570b5846a9ed90800000000000000
+      internalID: -7067935310486219082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_28
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 419
+        width: 110
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf533f40f4e89150800000000000000
+      internalID: 5879701034304233392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_29
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 589
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17824293c48810b40800000000000000
+      internalID: 5404750888778868849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_30
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 599
+        width: 20
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f0ce9ad18e41e420800000000000000
+      internalID: 2657491574750888177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_31
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 594
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4585383f9cea48a0800000000000000
+      internalID: -6319978958474082993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_32
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 472
+        width: 96
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d96acf5d13170df0800000000000000
+      internalID: -214181440394729002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_33
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 560
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66c4b5cc43aaf0060800000000000000
+      internalID: 6921938296035298406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_34
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 563
+        width: 19
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcaa5fd54510dba20800000000000000
+      internalID: 3079619182056549071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_35
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 577
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a3112a40576bf3a0800000000000000
+      internalID: -6630592431834197088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_36
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 401
+        width: 91
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c063f36fdd01e10800000000000000
+      internalID: 2166475470457408565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_37
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 566
+        width: 17
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20afa99b32e540280800000000000000
+      internalID: -9078027441341269502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_38
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 531
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0558cf35a22196f80800000000000000
+      internalID: -8112933280724253360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_39
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 527
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444c0970d38fb8ab0800000000000000
+      internalID: -5004633619888552892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_40
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 297
+        width: 99
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb960a75089db6f0800000000000000
+      internalID: -667210020491453495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_41
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 494
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56e9889c5ce33d30800000000000000
+      internalID: 4410128342566168157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_42
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 461
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9718cae6b623eb250800000000000000
+      internalID: 5962258393684803961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_43
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 443
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ff0d98f4e3249f0800000000000000
+      internalID: -485757298467078256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_44
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 444
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a7c194754153e50800000000000000
+      internalID: 6788354378452204052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IconMainGame_45
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 421
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fee7d7f5084ec5e10800000000000000
+      internalID: 2187874759004225263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IconMainGame_0: 8824387085517868866
+      IconMainGame_1: 4795011886698418106
+      IconMainGame_10: 2325189172853440378
+      IconMainGame_11: 717647982693118993
+      IconMainGame_12: 6247669007148718598
+      IconMainGame_13: 4578055253078231506
+      IconMainGame_14: -523900680248515258
+      IconMainGame_15: 5330919681969179503
+      IconMainGame_16: 5810179625917930337
+      IconMainGame_17: 6688010460856389072
+      IconMainGame_18: 2377635057791062695
+      IconMainGame_19: 8240951631497888744
+      IconMainGame_2: 2841142561426957794
+      IconMainGame_20: 4189087140710964053
+      IconMainGame_21: -1843301761940711750
+      IconMainGame_22: -1537270005180192443
+      IconMainGame_23: -2653450213987136551
+      IconMainGame_24: 6467904721971114776
+      IconMainGame_25: 7786400249702045568
+      IconMainGame_26: 2200321555790762839
+      IconMainGame_27: -7067935310486219082
+      IconMainGame_28: 5879701034304233392
+      IconMainGame_29: 5404750888778868849
+      IconMainGame_3: -491314659403187646
+      IconMainGame_30: 2657491574750888177
+      IconMainGame_31: -6319978958474082993
+      IconMainGame_32: -214181440394729002
+      IconMainGame_33: 6921938296035298406
+      IconMainGame_34: 3079619182056549071
+      IconMainGame_35: -6630592431834197088
+      IconMainGame_36: 2166475470457408565
+      IconMainGame_37: -9078027441341269502
+      IconMainGame_38: -8112933280724253360
+      IconMainGame_39: -5004633619888552892
+      IconMainGame_4: 1305651055915908999
+      IconMainGame_40: -667210020491453495
+      IconMainGame_41: 4410128342566168157
+      IconMainGame_42: 5962258393684803961
+      IconMainGame_43: -485757298467078256
+      IconMainGame_44: 6788354378452204052
+      IconMainGame_45: 2187874759004225263
+      IconMainGame_5: 1009163234300889743
+      IconMainGame_6: 4843764200388409668
+      IconMainGame_7: 7769540081794637541
+      IconMainGame_8: -5244268321261268786
+      IconMainGame_9: -1037867861110397308
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

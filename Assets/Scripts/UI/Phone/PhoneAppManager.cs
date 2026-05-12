@@ -1,5 +1,3 @@
-using NUnit.Framework;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -71,20 +69,26 @@ public class PhoneAppManager : Singleton<PhoneAppManager>
     public void LogIn(bool logIn)
     {
         _isCaptChaUnlocked = logIn;
-        MusicAppMinigame();
+        ActiveApp(3);
     }
 
     public void CaptChaSuccess(bool Completed)
     {
         _isMusicUnlocked = Completed;
-        MusicAppMinigame();
+        ActiveApp(3);
     }
 
     private void MusicAppMinigame()
-    {
-        musicScreenHome.gameObject.SetActive(_isMusicUnlocked);
-        musicCaptChaMinigame.gameObject.SetActive(!_isMusicUnlocked);
-        musicLogInMinigame.gameObject.SetActive(!_isCaptChaUnlocked);
+    {     
+        if (_isMusicUnlocked)
+        {
+            musicScreenHome.gameObject.SetActive(true);
+        }else
+        {
+            musicCaptChaMinigame.gameObject.SetActive(_isCaptChaUnlocked);
+            musicLogInMinigame.gameObject.SetActive(!_isCaptChaUnlocked);
+        }
+
     }
 
     public void HomeScreen()
