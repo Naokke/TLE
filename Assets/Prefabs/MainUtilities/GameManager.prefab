@@ -54,3 +54,4 @@ MonoBehaviour:
   sceneMainMenu: Menu
   sceneGame: InGame
   sceneSettings: Settings
+  scenePhone: Phone

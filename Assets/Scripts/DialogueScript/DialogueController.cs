@@ -8,7 +8,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
-public class DialogueController : MonoBehaviour
+public class DialogueController : Singleton<DialogueController>
 {
     #region Starting variables and objects
     

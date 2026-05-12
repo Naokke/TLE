@@ -36,7 +36,11 @@ public class RecorsAppManager : MonoBehaviour
             {
                 record.gameObject.SetActive(true);
             }
-            buttonCheckTryUnlcokRecords.gameObject.SetActive(false);
+            buttonLockedRecords.gameObject.SetActive(false);
+
+            buttonLockedRecords.onClick.RemoveListener(TryUnlock);
+            buttonCheckTryUnlcokRecords.onClick.RemoveListener(CheckPassword);
+            
             TryUnlock();
         }
     }

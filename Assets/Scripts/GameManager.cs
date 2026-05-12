@@ -23,7 +23,8 @@ public class GameManager : Singleton<GameManager>
     [Header("Scenes")]
     [SerializeField] private string sceneMainMenu;
     [SerializeField] private string sceneGame;
-    [SerializeField] private string sceneSettings;   
+    [SerializeField] private string sceneSettings;
+    [SerializeField] private string scenePhone;
 
     // Settings Variables
     private bool _isSettingsOpen = false;
@@ -34,7 +35,6 @@ public class GameManager : Singleton<GameManager>
     // Level 1 variables.
 
     private bool respuesta1 = false;
-    private bool respuesta2 = false;
 
     #endregion
 
@@ -99,7 +99,7 @@ public class GameManager : Singleton<GameManager>
             _isSettingsOpen = true;
         }else
         {
-            SceneManager.UnloadSceneAsync(2);
+            SceneManager.UnloadSceneAsync(sceneSettings);
             _isSettingsOpen = false;
             //QUITAR ESCENA DE AJUSTES
         }

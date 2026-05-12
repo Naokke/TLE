@@ -17,15 +17,23 @@ public class Settings : MonoBehaviour
     [SerializeField] TMP_Dropdown resolutionDropdown;
     [SerializeField] Slider Music;
     [SerializeField] Slider Effects;
+
     [SerializeField] Button QuitButton;
+    [SerializeField] Button Backbutton;
 
     private void Start()
     {
         QuitButton.onClick.AddListener(AppQuit);
         resolutionDropdown.onValueChanged.AddListener(ResChange);
         fullScreenToggle.onValueChanged.AddListener(ActivateFullScreen);
+        Backbutton.onClick.AddListener(CloseSettings);
 
         CheckRes();
+    }
+
+    private void CloseSettings()
+    {
+        GameManager.Get().OpenSettings();
     }
 
     private void ActivateFullScreen(bool activate)

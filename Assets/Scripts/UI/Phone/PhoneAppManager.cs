@@ -6,11 +6,17 @@ using UnityEngine.UI;
 
 public class PhoneAppManager : Singleton<PhoneAppManager>
 {
+    [Header("Buttons")]
     [SerializeField] private Button homeButton;
-    
+    [SerializeField] private Button quitButton;
+    [SerializeField] private Button mapButton;
+    [SerializeField] private Button settingsButton;
 
+    [Header("Main Screens and Button Apps")]
     [SerializeField] private List<AppsInteactable> apps;
     [SerializeField] private List<GameObject> screens;
+
+    [Header("MusicApp Screens")]
     [SerializeField] private GameObject musicScreenHome;
     [SerializeField] private GameObject musicLogInMinigame;
     [SerializeField] private GameObject musicCaptChaMinigame;
@@ -21,9 +27,21 @@ public class PhoneAppManager : Singleton<PhoneAppManager>
     private void Start()
     {
         homeButton.onClick.AddListener(HomeScreen);
+        quitButton.onClick.AddListener(QuitPhone);
+        settingsButton.onClick.AddListener(Opensettings);
 
         HomeScreen();
         this.gameObject.SetActive(false);
+    }
+
+    private void Opensettings()
+    {
+        GameManager.Get().OpenSettings();
+    }
+
+    private void QuitPhone()
+    {
+        GameManager.Get().ActivePhone(false);
     }
 
     private void ClearScreen()

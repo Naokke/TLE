@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class PhonePasswordMinigame : MonoBehaviour
+public class PhonePasswordMinigame : Singleton<PhonePasswordMinigame>
 {
     [SerializeField] TMP_Text displayPassword;
 
