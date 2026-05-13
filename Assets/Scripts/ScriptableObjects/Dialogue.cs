@@ -8,6 +8,7 @@ public class Dialogue : ScriptableObject
 {
     public List<Sentence> Sentences;
     public bool dialogueOption;
+    public DialogueOptions options;
 
     [System.Serializable]
     public struct Sentence

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -185,6 +186,7 @@ public class DialogueController : Singleton<DialogueController>
         {
             if (currentDialogue.dialogueOption)
             {
+                DialogueOptionManager.Get().SetUpOptions(currentDialogue.options);
                 GameManager.Get().ActiveOptionScreen(true);
                 
             }else

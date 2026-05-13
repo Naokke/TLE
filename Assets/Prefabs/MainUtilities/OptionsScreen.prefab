@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1301977063113945568}
   - component: {fileID: 450005843759332368}
   - component: {fileID: 6807728820501414037}
-  - component: {fileID: 7642361810322948542}
   m_Layer: 5
   m_Name: OptionB
   m_TagString: Untagged
@@ -122,21 +121,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7642361810322948542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3163814543754633550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5278f323a186f4e4094272b18a850e39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueOptionsButtons
-  correctAnswer: 1
-  dialogueAnswer: {fileID: 11400000, guid: 6738a946c6dc62b448d5dcf3ce046d86, type: 2}
-  keyInfo: Salchipapa
 --- !u!1 &4966636880619999309
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +270,6 @@ GameObject:
   - component: {fileID: 4302450907317573173}
   - component: {fileID: 6283510410465932961}
   - component: {fileID: 6227872686080161008}
-  - component: {fileID: 6001526385647239109}
   m_Layer: 5
   m_Name: OptionA
   m_TagString: Untagged
@@ -396,21 +379,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6001526385647239109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5137702519490104640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5278f323a186f4e4094272b18a850e39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueOptionsButtons
-  correctAnswer: 1
-  dialogueAnswer: {fileID: 11400000, guid: f5ffd956a8f0eb7428c0f394f586a3e5, type: 2}
-  keyInfo: Salchipapa
 --- !u!1 &6002914938532832244
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -63,6 +64,11 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public void StartGame()
+    {
+        canvaInteractableScreen.gameObject.SetActive(true);
+    }
+
     public void ActiveInteractableScreen(bool Active)
     { 
         canvaInteractableScreen.gameObject.SetActive(Active);
@@ -126,6 +132,8 @@ public class GameManager : Singleton<GameManager>
             ActivePasswordMinigame(false);
         }
     }
+
+    
     #endregion
 
 }

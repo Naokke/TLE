@@ -1,42 +1,62 @@
 using System;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogueOptionManager : MonoBehaviour
+public class DialogueOptionManager : Singleton<DialogueOptionManager>
 {
     [SerializeField] private Button AOption;
     [SerializeField] private Button BOption;
 
-    private DialogueOptionsButtons optionAData;
-    private DialogueOptionsButtons optionBData;
+    [SerializeField] private TMP_Text textOptionA;
+    [SerializeField] private TMP_Text textOptionB;
+
+    private DialogueOptions currentOptions;
 
     private void Start()
     {
         // ACTIVATION IN: GameManager Script
         this.gameObject.SetActive(false); //Set GameObject Invisible, to use just when needed.
-        optionAData = AOption.GetComponent<DialogueOptionsButtons>();
-        optionBData = BOption.GetComponent<DialogueOptionsButtons>();
-                                          
+
     }
 
-    private void OnEnable()
+    public void SetUpOptions(DialogueOptions options)
     {
-        AOption.onClick.AddListener(() => CheckAnswer(
-            optionAData.IsCorrect(),
-            optionAData.dialogueSelected(),
-            optionAData.Clue()
-            ));
-        BOption.onClick.AddListener(() => CheckAnswer(
-            optionBData.IsCorrect(),
-            optionBData.dialogueSelected(),
-            optionBData.Clue()
-            ));
+        currentOptions = options;
+        textOptionA.text = currentOptions.textOptionA;
+        textOptionB.text = currentOptions.textOptionB;
+
+        AOption.onClick.RemoveAllListeners();
+        BOption.onClick.RemoveAllListeners();
+
+        AOption.onClick.AddListener(() => 
+        {
+            CheckAnswer(
+            currentOptions._isACorrect,
+            currentOptions.dialogueAnswerA,
+            currentOptions.keyInfoA); 
+        });
+
+        BOption.onClick.AddListener(() =>
+        {
+            CheckAnswer(
+            currentOptions._isBCorrect,
+            currentOptions.dialogueAnswerB,
+            currentOptions.keyInfoB);
+        });
     }
 
-    private void CheckAnswer(bool Answer, Dialogue dialogueAnswer, string clue)
+    private void CheckAnswer(
+        bool Answer, Dialogue dialogueAnswer, string clue)
     {
         GameManager.Get().GetClue(clue,Answer);
-        GameManager.Get().ActiveDialogue(dialogueAnswer, true);
+        if (currentOptions._isGeneric)
+        {
+            GameManager.Get().ActiveDialogue(currentOptions.dialogueAnswerGeneric,true);
+        }else
+        {
+            GameManager.Get().ActiveDialogue(dialogueAnswer, true);
+        }            
         this.gameObject.SetActive(false);
     }
 }
