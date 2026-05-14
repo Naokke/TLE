@@ -6,5 +6,6 @@ public class LevelManager : Singleton<LevelManager>
     void Start()
     {
         this.gameObject.SetActive(false);
+        
     }
 }

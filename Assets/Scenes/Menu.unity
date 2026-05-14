@@ -3105,6 +3105,10 @@ PrefabInstance:
       propertyPath: canvaInteractableScreen
       value: 
       objectReference: {fileID: 1515702037}
+    - target: {fileID: 8796615714769389525, guid: c9aa519b816ee9949a1dabb70616233a, type: 3}
+      propertyPath: canvaoptionDialogueScreen
+      value: 
+      objectReference: {fileID: 699723880603061922}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3201,7 +3205,7 @@ PrefabInstance:
     - target: {fileID: 2203232434535035553, guid: 0be20efd6070cc44eb7b24bc1062ad03, type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 555787fdb87ceed42a4194c9559bc6e0, type: 2}
+      objectReference: {fileID: 11400000, guid: 14b6003e6a378b341a348c27f83b977c, type: 2}
     - target: {fileID: 4233927038724819098, guid: 0be20efd6070cc44eb7b24bc1062ad03, type: 3}
       propertyPath: m_Name
       value: Interactable_Screen

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: DamianNeutral
   m_EditorClassIdentifier: Assembly-CSharp::Speakers
   speakerName: "Dami\xE1n"
-  boxNameColor: {r: 0.9490196, g: 0.5686275, b: 0.20784314, a: 0}
+  boxNameColor: {r: 0.9490196, g: 0.5686275, b: 0.20784314, a: 1}
   speakerSprite: {fileID: 3834629957669748665, guid: 8bf1848f2a3adbb45bb03800ca3acb4b, type: 3}

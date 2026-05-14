@@ -15,25 +15,44 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private Canvas canvaInteractableScreen;
     [SerializeField] private Canvas canvaPasswordMinigame;
     [SerializeField] private Canvas canvaPhoneScreen;
-    [SerializeField] private Canvas optionDialogueScreen;
-    [SerializeField] private Canvas settingsScreen;
+    [SerializeField] private Canvas canvaoptionDialogueScreen;
+    [SerializeField] private Canvas canvasettingsScreen;
 
     [Header("Scenes")]
-    [SerializeField] private string sceneMainMenu;
-    [SerializeField] private string sceneGame;
     [SerializeField] private string sceneSettings;
-    [SerializeField] private string scenePhone;
+
+
 
     // Settings Variables
     private bool _isSettingsOpen = false;
+    public bool IsPasswordSuccess { get; private set; } = false;    
 
-    public bool IsPasswordSuccess { get; private set; } = false;
+    #endregion
 
+    #region LevelManager
 
+    // Levels
+    public enum CurrentLevel
+    {
+        Level1, Level2, Level3, Level4
+    }
+
+    public enum CurrentPhase
+    {
+        Searching, Office, Interrogation, Completed
+    }
+
+    public void StartLevel(CurrentLevel level)
+    {
+
+    }
+
+    #endregion
+
+    #region Level 1
     // Level 1 variables.
 
     private bool respuesta1 = false;
-
     #endregion
 
     #region Options Functions
@@ -83,7 +102,7 @@ public class GameManager : Singleton<GameManager>
 
     public void ActiveOptionScreen(bool Activate)
     {
-        optionDialogueScreen.gameObject.SetActive(Activate);
+        canvaoptionDialogueScreen.gameObject.SetActive(Activate);
         ActiveDialogue(defaultDialogue,!Activate);
         ActiveInteractableScreen(!Activate);
     }

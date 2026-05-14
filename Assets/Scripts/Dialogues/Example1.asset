@@ -22,5 +22,5 @@ MonoBehaviour:
   - text: Salchipapa >
     speaker: {fileID: 11400000, guid: 1b30856fb5261da4ebe2db9667be69c7, type: 2}
     isLeft: 1
-  dialogueOption: 1
-  options: {fileID: 11400000, guid: bf1d2a7068b6c2a48b7b82eafd3dbd13, type: 2}
+  dialogueOption: 0
+  options: {fileID: 0}
