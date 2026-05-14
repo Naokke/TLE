@@ -25,7 +25,7 @@ MonoBehaviour:
   - text: "Y porque fuiste el \xFAltimo en hablar con ella. "
     speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
     isLeft: 0
-  - text: "No llegue a hablar con ella, cuando contest\xE9 la llamada ya\u2026 no
+  - text: "No llegue a hablar con ella. Cuando contest\xE9 la llamada ya\u2026 no
       estaba. "
     speaker: {fileID: 11400000, guid: ec4700dbf72d3d94794f3aeba1044795, type: 2}
     isLeft: 1
@@ -36,20 +36,74 @@ MonoBehaviour:
     speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
     isLeft: 0
   - text: "A que no se o\xEDa nada. Dec\xEDa su nombre, pero no hab\xEDa respuesta. "
-    speaker: {fileID: 11400000, guid: 8c92548aedf555e41b85b2b7988536eb, type: 2}
-    isLeft: 1
-  - text: "Deber\xEDa haber contestado antes\u2026"
-    speaker: {fileID: 11400000, guid: 8c92548aedf555e41b85b2b7988536eb, type: 2}
+    speaker: {fileID: 11400000, guid: ec4700dbf72d3d94794f3aeba1044795, type: 2}
     isLeft: 1
   - text: "\xBFPor eso fuiste a buscarla?"
     speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
     isLeft: 0
   - text: "S\xED, fui a buscarla porque quedamos en que si algo iba mal me llamar\xEDa
-      e ir\xEDa a por ella. Y entonces vi a Izan merodeando"
+      e ir\xEDa a por ella. "
     speaker: {fileID: 11400000, guid: 8c92548aedf555e41b85b2b7988536eb, type: 2}
+    isLeft: 1
+  - text: Y entonces vi a Izan merodeando
+    speaker: {fileID: 11400000, guid: b651f6f4574b0fa49b7da11b6ef90b98, type: 2}
     isLeft: 1
   - text: "\xBFPodr\xEDas contarme m\xE1s?"
     speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
     isLeft: 0
+  - text: "Claro. Llegu\xE9 a la discoteca, me puse a buscarla y lo vi. "
+    speaker: {fileID: 11400000, guid: ec4700dbf72d3d94794f3aeba1044795, type: 2}
+    isLeft: 1
+  - text: "Me pareci\xF3 raro de cojones y pens\xE9 que \xE9l la hab\xEDa hecho algo
+      as\xED que fui a hablar con \xE9l."
+    speaker: {fileID: 11400000, guid: ec4700dbf72d3d94794f3aeba1044795, type: 2}
+    isLeft: 1
+  - text: "Seg\xFAn la declaraci\xF3n inicial que dio a la polic\xEDa, le agrediste
+      sin motivo. \xBFEs eso cierto?"
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: Ya, claro, como no.
+    speaker: {fileID: 11400000, guid: b651f6f4574b0fa49b7da11b6ef90b98, type: 2}
+    isLeft: 1
+  - text: "Dami\xE1n necesito que me cuentes tu versi\xF3n\u2026"
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "Mi versi\xF3n es que el exnovio controlador y obsesivo de mi mejor amiga
+      aparece justamente cuando ella desaparece."
+    speaker: {fileID: 11400000, guid: b651f6f4574b0fa49b7da11b6ef90b98, type: 2}
+    isLeft: 1
+  - text: " \xBFQu\xE9 quer\xEDas que hiciese? \xBFDarle los buenos d\xEDas?"
+    speaker: {fileID: 11400000, guid: b651f6f4574b0fa49b7da11b6ef90b98, type: 2}
+    isLeft: 1
+  - text: "Dami\xE1n. \xBFLe agrediste o no?"
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "\xBFPor qu\xE9 es eso relevante? Nala ha desaparecido. \xBFQu\xE9 m\xE1s
+      da si le empuj\xE9, le pegu\xE9 o cualquier otra cosa?"
+    speaker: {fileID: 11400000, guid: b651f6f4574b0fa49b7da11b6ef90b98, type: 2}
+    isLeft: 1
+  - text: "Porque necesito saber exactamente qu\xE9 fue lo que pas\xF3 esa noche
+      para encontrarla."
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "Quiz\xE1 te parezca irrelevante pero cualquier incoherencia o detalle
+      extra\xF1o en un testimonio puede resultar en una pista crucial."
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "Solo le empuj\xE9\u2026Nada m\xE1s"
+    speaker: {fileID: 11400000, guid: 8c92548aedf555e41b85b2b7988536eb, type: 2}
+    isLeft: 1
+  - text: "Bien, \xBFd\xF3nde estabas a las dos y media de la madrugada?"
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "Estaba en casa, no me mov\xED de all\xED hasta que Nala me llam\xF3."
+    speaker: {fileID: 11400000, guid: ec4700dbf72d3d94794f3aeba1044795, type: 2}
+    isLeft: 1
+  - text: "\xBFAlguien puede confirmar esa coartada?"
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: Rebeca, vivo con ella.
+    speaker: {fileID: 11400000, guid: ec4700dbf72d3d94794f3aeba1044795, type: 2}
+    isLeft: 1
   dialogueOption: 1
-  options: {fileID: 0}
+  options: {fileID: 11400000, guid: d2fb399a0df767e43b55de763c8652de, type: 2}

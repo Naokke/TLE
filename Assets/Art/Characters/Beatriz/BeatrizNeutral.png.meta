@@ -106,12 +106,12 @@ TextureImporter:
       name: Beatriz_Neutral_0
       rect:
         serializedVersion: 2
-        x: 702
-        y: 76
-        width: 615
-        height: 1519
+        x: 645
+        y: 65
+        width: 700
+        height: 1600
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -133,7 +133,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 30238b4e6e38bbd42aa35030a441e2f8
     internalID: 0
     vertices: []
     indices: 

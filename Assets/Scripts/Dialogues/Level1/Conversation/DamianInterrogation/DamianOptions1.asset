@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3206a8487196c4f45ae617b0997742cc, type: 3}
+  m_Name: DamianOptions1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueOptions
+  textOptionA: "Antes has mencionado algo sobre Izan siendo controlador y obsesivo,
+    \xBFpuedes contarme m\xE1s?"
+  dialogueAnswerA: {fileID: 11400000, guid: 82bbe6d2b48f599439342be499cfd5e1, type: 2}
+  _isACorrect: 1
+  keyInfoA: DamianClue1
+  textOptionB: "\xBFCu\xE1l era tu relaci\xF3n actual con Nala?"
+  dialogueAnswerB: {fileID: 11400000, guid: 82bbe6d2b48f599439342be499cfd5e1, type: 2}
+  _isBCorrect: 0
+  keyInfoB: 
+  _isGeneric: 0
+  dialogueAnswerGeneric: {fileID: 0}

@@ -103,12 +103,12 @@ TextureImporter:
       name: Damian_Serio_0
       rect:
         serializedVersion: 2
-        x: 721
-        y: 87
-        width: 571
-        height: 1761
+        x: 645
+        y: 65
+        width: 700
+        height: 1800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5100a33ec6a0dab43be2d39b08dc08af
     internalID: 0
     vertices: []
     indices: 
