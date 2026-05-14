@@ -32,9 +32,13 @@ public class GameManager : Singleton<GameManager>
     #region LevelManager
 
     // Levels
+
+    public CurrentLevel currentLevel { get; private set; }
+    public CurrentPhase currentPhase { get; private set; }
+
     public enum CurrentLevel
     {
-        Level1, Level2, Level3, Level4
+        Level1, Level2, Level3, Level4, Final
     }
 
     public enum CurrentPhase
