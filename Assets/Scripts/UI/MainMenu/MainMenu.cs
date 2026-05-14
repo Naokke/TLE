@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class MainMenu : MonoBehaviour
 {
@@ -8,12 +9,15 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button buttonQuit;
     [SerializeField] private Button buttonSettings;
     [SerializeField] private string gameScene;
+    [SerializeField] private VideoPlayer videoPlayer;
 
     private void Start()
     {
         buttonStart.onClick.AddListener(GameStart);
         buttonQuit.onClick.AddListener(GameQuit);
         buttonSettings.onClick.AddListener(GameSettings);
+
+        
     }
 
     private void GameSettings()
@@ -32,6 +36,8 @@ public class MainMenu : MonoBehaviour
 
     private void GameStart()
     {
+        videoPlayer.Play();
+        
         SceneManager.LoadScene(gameScene);
         GameManager.Get().StartGame();
     }

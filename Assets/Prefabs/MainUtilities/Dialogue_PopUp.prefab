@@ -559,13 +559,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueController
   dialogueText: {fileID: 3244378443982596397}
-  dialogueNameLeft: {fileID: 3546664583278975377}
-  dialogueNameRight: {fileID: 4475064917386832828}
+  dialogueNameLeft: {fileID: 4475064917386832828}
+  dialogueNameRight: {fileID: 3546664583278975377}
   dialogueSpeakerLeft: {fileID: 4638674083910260215}
   dialogueSpeakerRight: {fileID: 849113416900625726}
   defaultSpeaker: {fileID: 11400000, guid: a62a3c7a793558946aa12492ed4740bc, type: 2}
-  boxNameLeft: {fileID: 2661324503454432013}
-  boxNameRight: {fileID: 8141096644840782226}
+  boxNameLeft: {fileID: 8141096644840782226}
+  boxNameRight: {fileID: 2661324503454432013}
   currentDialogue: {fileID: 11400000, guid: 6738a946c6dc62b448d5dcf3ce046d86, type: 2}
   defaultDialogue: {fileID: 11400000, guid: 6738a946c6dc62b448d5dcf3ce046d86, type: 2}
 --- !u!1 &3031562840468899525
