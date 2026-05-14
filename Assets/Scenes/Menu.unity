@@ -3205,7 +3205,7 @@ PrefabInstance:
     - target: {fileID: 2203232434535035553, guid: 0be20efd6070cc44eb7b24bc1062ad03, type: 3}
       propertyPath: dialogue
       value: 
-      objectReference: {fileID: 11400000, guid: 14b6003e6a378b341a348c27f83b977c, type: 2}
+      objectReference: {fileID: 11400000, guid: 976be768dc77a54428c7c88d9630b51d, type: 2}
     - target: {fileID: 4233927038724819098, guid: 0be20efd6070cc44eb7b24bc1062ad03, type: 3}
       propertyPath: m_Name
       value: Interactable_Screen

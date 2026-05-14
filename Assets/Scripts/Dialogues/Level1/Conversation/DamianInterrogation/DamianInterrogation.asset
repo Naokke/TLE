@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f026d171676a70047a2488952fccb7ca, type: 3}
+  m_Name: DamianInterrogation
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  Sentences:
+  - text: 'Buenas tardes, por favor toma asiento. '
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "Sabes por qu\xE9 est\xE1s aqu\xED, \xBFcierto? "
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "Porque Nala ha desaparecido\u2026 "
+    speaker: {fileID: 11400000, guid: ec4700dbf72d3d94794f3aeba1044795, type: 2}
+    isLeft: 1
+  - text: "Y porque fuiste el \xFAltimo en hablar con ella. "
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "No llegue a hablar con ella, cuando contest\xE9 la llamada ya\u2026 no
+      estaba. "
+    speaker: {fileID: 11400000, guid: ec4700dbf72d3d94794f3aeba1044795, type: 2}
+    isLeft: 1
+  - text: "Deber\xEDa haber contestado antes\u2026"
+    speaker: {fileID: 11400000, guid: 8c92548aedf555e41b85b2b7988536eb, type: 2}
+    isLeft: 1
+  - text: "\xBFA qu\xE9 te refieres con que no estaba?"
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "A que no se o\xEDa nada. Dec\xEDa su nombre, pero no hab\xEDa respuesta. "
+    speaker: {fileID: 11400000, guid: 8c92548aedf555e41b85b2b7988536eb, type: 2}
+    isLeft: 1
+  - text: "Deber\xEDa haber contestado antes\u2026"
+    speaker: {fileID: 11400000, guid: 8c92548aedf555e41b85b2b7988536eb, type: 2}
+    isLeft: 1
+  - text: "\xBFPor eso fuiste a buscarla?"
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  - text: "S\xED, fui a buscarla porque quedamos en que si algo iba mal me llamar\xEDa
+      e ir\xEDa a por ella. Y entonces vi a Izan merodeando"
+    speaker: {fileID: 11400000, guid: 8c92548aedf555e41b85b2b7988536eb, type: 2}
+    isLeft: 1
+  - text: "\xBFPodr\xEDas contarme m\xE1s?"
+    speaker: {fileID: 11400000, guid: c1fffe0765ad88749aeb0f4eb8567b42, type: 2}
+    isLeft: 0
+  dialogueOption: 1
+  options: {fileID: 0}
