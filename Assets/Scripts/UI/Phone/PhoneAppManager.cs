@@ -19,11 +19,13 @@ public class PhoneAppManager : Singleton<PhoneAppManager>
     [SerializeField] private GameObject musicLogInMinigame;
     [SerializeField] private GameObject musicCaptChaMinigame;
 
+
     private bool _isMusicUnlocked = false;
     private bool _isCaptChaUnlocked = false;
 
     private void Start()
     {
+
         homeButton.onClick.AddListener(HomeScreen);
         quitButton.onClick.AddListener(QuitPhone);
         settingsButton.onClick.AddListener(Opensettings);

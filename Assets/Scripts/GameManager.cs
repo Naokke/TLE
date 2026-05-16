@@ -25,13 +25,15 @@ public class GameManager : Singleton<GameManager>
 
     // Settings Variables
     private bool _isSettingsOpen = false;
-    public bool IsPasswordSuccess { get; private set; } = false;    
+    public bool IsPasswordSuccess { get; private set; } = false;
 
     #endregion
 
     #region LevelManager
 
     // Levels
+
+    public bool _isPhoneUpdate = false;
 
     public CurrentLevel currentLevel { get; private set; }
     public CurrentPhase currentPhase { get; private set; }

@@ -497,6 +497,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueOptionManager
   AOption: {fileID: 6227872686080161008}
   BOption: {fileID: 6807728820501414037}
+  textOptionA: {fileID: 5559911476605861135}
+  textOptionB: {fileID: 4277296446744396240}
 --- !u!1 &6011380000885615257
 GameObject:
   m_ObjectHideFlags: 0
