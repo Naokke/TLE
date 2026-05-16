@@ -47,6 +47,11 @@ public class GameManager : Singleton<GameManager>
     {
         Searching, Office, Interrogation, Completed
     }
+    public void StartGame()
+    {
+        canvaInteractableScreen.gameObject.SetActive(true);
+        LevelManager.Get().SetLevel(1);
+    }
 
     public void StartLevel(CurrentLevel level)
     {
@@ -87,11 +92,6 @@ public class GameManager : Singleton<GameManager>
         {
             dialoguePopUp.PlayDialogue(defaultDialogue); //Debugging DialoguePopUp
         }
-    }
-
-    public void StartGame()
-    {
-        canvaInteractableScreen.gameObject.SetActive(true);
     }
 
     public void ActiveInteractableScreen(bool Active)

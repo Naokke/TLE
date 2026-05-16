@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -11,13 +12,37 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private string gameScene;
     [SerializeField] private VideoPlayer videoPlayer;
 
+    private bool videoFinished = false;
+
     private void Start()
     {
         buttonStart.onClick.AddListener(GameStart);
         buttonQuit.onClick.AddListener(GameQuit);
         buttonSettings.onClick.AddListener(GameSettings);
 
-        
+        videoPlayer.loopPointReached += VideoFinished;
+
+        videoPlayer.gameObject.SetActive(false);
+    }
+
+    private void VideoFinished(VideoPlayer source)
+    {
+        if (videoFinished) return;
+        videoFinished = true;
+
+        videoPlayer.gameObject.SetActive(false);
+
+
+        SceneManager.LoadScene(gameScene);
+        GameManager.Get().StartGame();        
+    }
+
+    public void SkipVideo()
+    {
+        if (videoFinished) return;
+        videoPlayer.Stop();
+
+        VideoFinished(videoPlayer);
     }
 
     private void GameSettings()
@@ -36,9 +61,9 @@ public class MainMenu : MonoBehaviour
 
     private void GameStart()
     {
+        videoPlayer.gameObject.SetActive(true);
+        videoFinished = false;
         videoPlayer.Play();
-        
-        SceneManager.LoadScene(gameScene);
-        GameManager.Get().StartGame();
+        buttonStart.interactable = false;
     }
 }
