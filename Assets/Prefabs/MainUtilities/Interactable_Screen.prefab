@@ -115,6 +115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 430841f9846d6654ab1e3652c38ed59e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
+  Levels:
+  - {fileID: 0}
+  Phases:
+  - {fileID: 0}
 --- !u!1 &6235370085115349695
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,5 +253,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ExampleButton
   dialogue: {fileID: 11400000, guid: 555787fdb87ceed42a4194c9559bc6e0, type: 2}
-  interfaceDeployer: 0
-  interfaceName: 
+  interfaceDeployer: 1
+  interfaceName: Phone

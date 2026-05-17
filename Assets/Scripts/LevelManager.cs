@@ -4,13 +4,11 @@ using UnityEngine;
 public class LevelManager : Singleton<LevelManager>
 {
     [SerializeField] List<GameObject> Levels;
-    [SerializeField] List<GameObject> Phases;
-
-    private int currentLevel = 0;
-    private int currentPhase = 0;
+    private GameManager gm;
 
     void Start()
     {
+        gm = GameManager.Get();
         ClearScreens();
         this.gameObject.SetActive(false);
     }
@@ -21,16 +19,11 @@ public class LevelManager : Singleton<LevelManager>
         {
             level.gameObject.SetActive(false);
         }
-
-        foreach (GameObject phases in Phases)
-        {
-            phases.gameObject.SetActive(false);
-        }
-
     }
 
     public void SetLevel(int level)
     {
+        Levels[level].gameObject.SetActive(true);
 
     }
 

@@ -17,6 +17,7 @@ public class GameManager : Singleton<GameManager>
     [SerializeField] private Canvas canvaPhoneScreen;
     [SerializeField] private Canvas canvaoptionDialogueScreen;
     [SerializeField] private Canvas canvasettingsScreen;
+    [SerializeField] private Canvas canvasMap;
 
     [Header("Scenes")]
     [SerializeField] private string sceneSettings;
@@ -25,6 +26,7 @@ public class GameManager : Singleton<GameManager>
 
     // Settings Variables
     private bool _isSettingsOpen = false;
+    private bool _isMapOpen = false;
     public bool IsPasswordSuccess { get; private set; } = false;
 
     #endregion
@@ -35,27 +37,38 @@ public class GameManager : Singleton<GameManager>
 
     public bool _isPhoneUpdate = false;
 
-    public CurrentLevel currentLevel { get; private set; }
-    public CurrentPhase currentPhase { get; private set; }
+    [SerializeField] private Levels _currentLevel;
+    public Levels CurrentLevel
+    {
+        get => _currentLevel;
+        private set
+        {
+            if (_currentLevel != value)
+            {
+                _currentLevel = value;
+            }
+        }
+    }
 
-    public enum CurrentLevel
+    public enum Levels
     {
         Level1, Level2, Level3, Level4, Final
     }
 
-    public enum CurrentPhase
+    public enum Phases
     {
         Searching, Office, Interrogation, Completed
     }
     public void StartGame()
     {
-        canvaInteractableScreen.gameObject.SetActive(true);
-        LevelManager.Get().SetLevel(1);
+        canvaInteractableScreen.gameObject.SetActive(true);        
+        CurrentLevel = Levels.Level1;  
     }
 
-    public void StartLevel(CurrentLevel level)
+    public void NextLevel()
     {
-
+        if (CurrentLevel == Levels.Final) return;
+        CurrentLevel = CurrentLevel + 1;
     }
 
     #endregion
@@ -130,8 +143,22 @@ public class GameManager : Singleton<GameManager>
             SceneManager.UnloadSceneAsync(sceneSettings);
             _isSettingsOpen = false;
             //QUITAR ESCENA DE AJUSTES
+        }        
+    }
+
+    public void OpenMap()
+    {
+        if (!_isMapOpen)
+        {
+            canvasMap.gameObject.SetActive(true);
+            _isMapOpen = true;
+            MapManager.Get().CurrentOptions(CurrentLevel);
         }
-        
+        else
+        {
+            canvasMap.gameObject.SetActive(false); 
+            _isMapOpen = false;
+        }        
     }
 
     #endregion
