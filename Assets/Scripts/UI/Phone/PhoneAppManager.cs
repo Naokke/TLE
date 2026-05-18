@@ -29,6 +29,7 @@ public class PhoneAppManager : Singleton<PhoneAppManager>
         homeButton.onClick.AddListener(HomeScreen);
         quitButton.onClick.AddListener(QuitPhone);
         settingsButton.onClick.AddListener(Opensettings);
+        mapButton.onClick.AddListener(GameManager.Get().OpenMap);
 
         HomeScreen();
         this.gameObject.SetActive(false);

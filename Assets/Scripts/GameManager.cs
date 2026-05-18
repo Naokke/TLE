@@ -38,6 +38,7 @@ public class GameManager : Singleton<GameManager>
     public bool _isPhoneUpdate = false;
 
     [SerializeField] private Levels _currentLevel;
+
     public Levels CurrentLevel
     {
         get => _currentLevel;
@@ -57,8 +58,9 @@ public class GameManager : Singleton<GameManager>
 
     public enum Phases
     {
-        Searching, Office, Interrogation, Completed
+        First, Second, Third, Final
     }
+
     public void StartGame()
     {
         canvaInteractableScreen.gameObject.SetActive(true);        

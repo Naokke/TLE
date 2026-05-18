@@ -10,6 +10,27 @@ public class MapManager : Singleton<MapManager>
     [SerializeField] private Button buttonParking;
     [SerializeField] private Button buttonVictimRoom;
 
+    [SerializeField] private Button QuitMap;
+
+    public enum Map
+    {
+        None, Office, PoliceStation, Parking, VictimRoom
+    }
+
+    [SerializeField] private Map _currentMap;
+
+    public Map CurrentMap
+    {
+        get => _currentMap;
+        private set
+        {
+            if (_currentMap != value)
+            {
+                _currentMap = value;
+            }
+        }
+    }
+
     private void Start()
     {
         this.gameObject.SetActive(false);
@@ -19,20 +40,35 @@ public class MapManager : Singleton<MapManager>
         buttonPoliceStation.onClick.AddListener(GoToPS);
         buttonParking.onClick.AddListener(GoToParking);
         buttonVictimRoom.onClick.AddListener(GoToRoom);
+
+        QuitMap.onClick.AddListener(GameManager.Get().OpenMap);
     }
 
     public void CurrentOptions(GameManager.Levels level)
     {
+        ClearPoints();
         switch (level)
         {
             case GameManager.Levels.Level1:
-                //Do things
+                buttonOffice.gameObject.SetActive(true);
+                buttonParking.gameObject.SetActive(true);
+                buttonPoliceStation.gameObject.SetActive(true);                
                 break;
+
             case GameManager.Levels.Level2:
-                //Do things
+                buttonOffice.gameObject.SetActive(true);
+                buttonPoliceStation.gameObject.SetActive(true);
+                buttonVictimRoom.gameObject.SetActive(true);
                 break;
+
             case GameManager.Levels.Level3:
-                //Do things
+                buttonPoliceStation.gameObject.SetActive(true);
+                buttonOffice.gameObject.SetActive(true);
+                break;
+
+            case GameManager.Levels.Level4:
+                buttonOffice.gameObject.SetActive(true);
+                buttonPoliceStation.gameObject.SetActive(true);
                 break;
         }
     }
@@ -40,23 +76,27 @@ public class MapManager : Singleton<MapManager>
     #region Go To
     private void GoToOffice()
     {
+        CurrentMap = Map.Office;
         GameManager.Get().OpenMap();
 
     }
 
     private void GoToRoom()
     {
-        throw new NotImplementedException();
+        CurrentMap = Map.VictimRoom;
+        GameManager.Get().OpenMap();
     }
 
     private void GoToParking()
     {
-        throw new NotImplementedException();
-    }
+        CurrentMap = Map.Parking;
+        GameManager.Get().OpenMap();
+     }
 
     private void GoToPS()
     {
-        throw new NotImplementedException();
+        CurrentMap = Map.PoliceStation;
+        GameManager.Get().OpenMap();
     }
     #endregion
 

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8c720262448e9564b8318ab78098bebb
+guid: 98c689aa052e4a041846ccdd2f535e10
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7795047940167282866
-    second: BackgorundMap_0
+      213: -6023130571959099983
+    second: MapButton_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,13 +46,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 9, y: 50, z: 50, w: 9}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BackgorundMap_0
+      name: MapButton_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 10
+        y: 50
+        width: 284
+        height: 284
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2b0bfc83dc29d2c60800000000000000
-      internalID: 7795047940167282866
+      spriteID: 1bd159e18aa896ca0800000000000000
+      internalID: -6023130571959099983
       vertices: []
       indices: 
       edges: []
@@ -126,7 +126,7 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BackgorundMap_0: 7795047940167282866
+      MapButton_0: -6023130571959099983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
