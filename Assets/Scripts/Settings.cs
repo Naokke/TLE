@@ -26,9 +26,24 @@ public class Settings : MonoBehaviour
         resolutionDropdown.onValueChanged.AddListener(ResChange);
         fullScreenToggle.onValueChanged.AddListener(ActivateFullScreen);
         Backbutton.onClick.AddListener(CloseSettings);
+        Music.onValueChanged.AddListener(SetMusic);
+        Effects.onValueChanged.AddListener(SetFx);
+
 
         CheckRes();
         SetPlayerPref();
+
+        this.gameObject.SetActive(false);
+    }
+
+    private void SetFx(float level)
+    {
+        PlayerPrefs.SetFloat("FxVolume", level);
+    }
+
+    private void SetMusic(float level)
+    {
+        PlayerPrefs.SetFloat("MusicVolume", level);
     }
 
     private void SetPlayerPref()
@@ -42,6 +57,9 @@ public class Settings : MonoBehaviour
         {
             _isFullScreen= false;
         }
+
+        Music.value = PlayerPrefs.GetFloat("MusicVolume");
+        Effects.value = PlayerPrefs.GetFloat("FxVolume");
     }
 
     private void CloseSettings()

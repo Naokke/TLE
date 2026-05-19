@@ -138,11 +138,11 @@ public class GameManager : Singleton<GameManager>
     {
         if (!_isSettingsOpen)
         {
-            SceneManager.LoadScene(sceneSettings, LoadSceneMode.Additive);
+            canvasettingsScreen.gameObject.SetActive(true);
             _isSettingsOpen = true;
         }else
         {
-            SceneManager.UnloadSceneAsync(sceneSettings);
+            canvasettingsScreen.gameObject.SetActive(false);
             _isSettingsOpen = false;
             //QUITAR ESCENA DE AJUSTES
         }        
