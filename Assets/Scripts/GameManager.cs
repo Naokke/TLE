@@ -56,10 +56,14 @@ public class GameManager : Singleton<GameManager>
         Level1, Level2, Level3, Level4, Final
     }
 
+    public event Action<Levels> OnLevelChange;  
+
     public enum Phases
     {
         First, Second, Third, Final
     }
+
+    public event Action<Phases> OnPhasesChange;
 
     public void StartGame()
     {

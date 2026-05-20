@@ -3,8 +3,10 @@ using UnityEngine;
 
 public class LevelManager : Singleton<LevelManager>
 {
-    [SerializeField] List<GameObject> Levels;
+    [SerializeField] List<GameObject> InteractableScreens;
     private GameManager gm;
+
+
 
     void Start()
     {
@@ -15,7 +17,7 @@ public class LevelManager : Singleton<LevelManager>
 
     private void ClearScreens()
     {
-        foreach (GameObject level in Levels)
+        foreach (GameObject level in InteractableScreens)
         {
             level.gameObject.SetActive(false);
         }
@@ -23,7 +25,7 @@ public class LevelManager : Singleton<LevelManager>
 
     public void SetLevel(int level)
     {
-        Levels[level].gameObject.SetActive(true);
+        InteractableScreens[level].gameObject.SetActive(true);
 
     }
 

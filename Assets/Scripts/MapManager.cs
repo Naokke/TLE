@@ -31,6 +31,8 @@ public class MapManager : Singleton<MapManager>
         }
     }
 
+    public event Action<Map> MapChanged;
+
     private void Start()
     {
         this.gameObject.SetActive(false);
@@ -44,33 +46,14 @@ public class MapManager : Singleton<MapManager>
         QuitMap.onClick.AddListener(GameManager.Get().OpenMap);
     }
 
+
+
     public void CurrentOptions(GameManager.Levels level)
     {
-        ClearPoints();
-        switch (level)
-        {
-            case GameManager.Levels.Level1:
-                buttonOffice.gameObject.SetActive(true);
-                buttonParking.gameObject.SetActive(true);
-                buttonPoliceStation.gameObject.SetActive(true);                
-                break;
-
-            case GameManager.Levels.Level2:
-                buttonOffice.gameObject.SetActive(true);
-                buttonPoliceStation.gameObject.SetActive(true);
-                buttonVictimRoom.gameObject.SetActive(true);
-                break;
-
-            case GameManager.Levels.Level3:
-                buttonPoliceStation.gameObject.SetActive(true);
-                buttonOffice.gameObject.SetActive(true);
-                break;
-
-            case GameManager.Levels.Level4:
-                buttonOffice.gameObject.SetActive(true);
-                buttonPoliceStation.gameObject.SetActive(true);
-                break;
-        }
+        buttonOffice.gameObject.SetActive(true);
+        buttonPoliceStation.gameObject.SetActive(true);
+        buttonParking.gameObject.SetActive(level == GameManager.Levels.Level1);
+        buttonVictimRoom.gameObject.SetActive(level == GameManager.Levels.Level2);        
     }
 
     #region Go To
@@ -78,6 +61,7 @@ public class MapManager : Singleton<MapManager>
     {
         CurrentMap = Map.Office;
         GameManager.Get().OpenMap();
+        MapChanged?.Invoke(CurrentMap);
 
     }
 
@@ -85,18 +69,21 @@ public class MapManager : Singleton<MapManager>
     {
         CurrentMap = Map.VictimRoom;
         GameManager.Get().OpenMap();
+        MapChanged?.Invoke(CurrentMap);
     }
 
     private void GoToParking()
     {
         CurrentMap = Map.Parking;
         GameManager.Get().OpenMap();
-     }
+        MapChanged?.Invoke(CurrentMap);
+    }
 
     private void GoToPS()
     {
         CurrentMap = Map.PoliceStation;
         GameManager.Get().OpenMap();
+        MapChanged?.Invoke(CurrentMap);
     }
     #endregion
 
